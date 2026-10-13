@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Otis & Allen: STOHRX sample shop (October 2026)
+  Otis & Allen: STOHRX sample shop (October 2026, v2 "walk through the shop")
 
   IMAGES
   Lifestyle photos: the Shopify Burst stock photos already used on otis-allen.myshopify.com (images/reference/).
@@ -12,7 +12,7 @@
     OPEN FARM open-farm-*    openfarmpet.com
     BOWSERS bowsers-*        bowsers.com
   No manufacturer packshot could be fetched for go! Solutions, Grand Cru, Outward Hound, Hot Dogs or Preston,
-  so those render as typographic placeholders. The bakery has no photos because none exist yet.
+  so those render as drawn placeholders. The bakery has no photos because none exist yet.
   Converted with Python Pillow: trim transparent edges, resize to 800px max, WEBP quality 82 (packshots) / 78 (photos).
 
   PLACEHOLDERS TO CONFIRM WITH THE SHOP
@@ -27,29 +27,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Otis & Allen | Healthy Pet Food, Treats and Grooming in Burlington</title>
 <meta name="description" content="Locally owned pet shop on Appleby Line in Burlington. Healthy dog and cat food with no wheat, corn or by-products, Canadian treats, an in-store bakery and grooming. Pickup, curbside and local delivery.">
-<meta name="theme-color" content="#081622">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2314243A'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-size='40' font-weight='700' fill='%23EEE6D8'%3E%26%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#1E3D2C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232F5D43'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-size='40' font-weight='700' fill='%23E0B45A'%3E%26%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="images/teddy-bear-dog-1400.webp" imagesrcset="images/teddy-bear-dog-800.webp 800w, images/teddy-bear-dog-1400.webp 1400w" imagesizes="(min-width: 900px) 46vw, 100vw">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Caveat:wght@500..700&family=Courier+Prime:wght@400;700&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/teddy-bear-dog-1400.webp" imagesrcset="images/teddy-bear-dog-800.webp 800w, images/teddy-bear-dog-1400.webp 1400w" imagesizes="(min-width: 900px) 40vw, 100vw">
 <style>
 :root{
-  --oat:#EEE6D8;--oat-2:#E5DAC6;--paper:#FBF8F2;
-  --navy:#14243A;--night:#081622;--ink-2:#4A5466;
-  --brick:#A8372A;--brick-2:#8C2C21;
-  --fog:#DCE3EA;--fog-2:#C9D4DF;
+  --oat:#EEE6D8;--oat-2:#E4D8C3;--paper:#FBF8F1;
+  --ink:#1D2620;--ink-2:#4D574F;
+  --brick:#A8372A;--brick-2:#8A2B20;
+  --green:#2F5D43;--green-2:#264D37;--green-d:#1E3D2C;--sage:#DCE6D8;--sage-2:#C9D7C4;
+  --chalk:#23392D;--gold:#E0B45A;--gold-2:#C99A3E;
+  --wood:#B98A5B;--wood-d:#8E6440;--wood-l:#D3AA7B;
   --ok:#2F6B47;--err:#A8372A;
-  --rule:rgba(20,36,58,.15);--rule-inv:rgba(238,230,216,.2);
+  --rule:rgba(29,38,32,.15);--rule-inv:rgba(238,230,216,.2);
   --display:'Bricolage Grotesque','Trebuchet MS',system-ui,sans-serif;
   --sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
-  --r:14px;--r-sm:8px;
-  --ease:cubic-bezier(.22,.61,.36,1);--spring:cubic-bezier(.34,1.4,.64,1);
+  --hand:'Caveat','Segoe Print','Bradley Hand',cursive;
+  --mono:'Courier Prime','Courier New',monospace;
+  --r:14px;--ease:cubic-bezier(.22,.61,.36,1);--spring:cubic-bezier(.34,1.4,.64,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:5rem;overflow-x:clip;-webkit-text-size-adjust:100%}
-body{font-family:var(--sans);font-size:1.0625rem;line-height:1.6;color:var(--navy);background:var(--oat);-webkit-font-smoothing:antialiased;overflow-x:clip}
+body{font-family:var(--sans);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--oat);-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -57,7 +60,7 @@ button{cursor:pointer;background:none;border:0}
 h1,h2,h3{font-family:var(--display);font-weight:750;line-height:1.02;letter-spacing:-.02em;text-wrap:balance}
 p{text-wrap:pretty}
 :focus-visible{outline:3px solid var(--brick);outline-offset:3px;border-radius:4px}
-.skip{position:absolute;left:1rem;top:-4rem;background:var(--navy);color:var(--oat);padding:.6rem 1rem;z-index:1000;text-decoration:none;border-radius:var(--r-sm)}
+.skip{position:absolute;left:1rem;top:-4rem;background:var(--green-d);color:var(--oat);padding:.6rem 1rem;z-index:1000;text-decoration:none;border-radius:8px}
 .skip:focus{top:1rem}
 .wrap{width:min(1240px,100% - 2rem);margin-inline:auto}
 .vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -66,17 +69,17 @@ p{text-wrap:pretty}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:.7rem 1.35rem;border-radius:999px;font-weight:650;font-size:1rem;text-decoration:none;background:var(--navy);color:var(--oat);border:2px solid var(--navy);transition:background .2s,color .2s,border-color .2s,transform .2s var(--ease)}
-.btn:hover{background:var(--brick);border-color:var(--brick)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:.7rem 1.35rem;border-radius:999px;font-weight:650;font-size:1rem;text-decoration:none;background:var(--green);color:var(--paper);border:2px solid var(--green);transition:background .2s,color .2s,border-color .2s,transform .2s var(--ease)}
+.btn:hover{background:var(--green-d);border-color:var(--green-d)}
 .btn:active{transform:scale(.97)}
 .btn.brick{background:var(--brick);border-color:var(--brick)}
 .btn.brick:hover{background:var(--brick-2);border-color:var(--brick-2)}
-.btn.line{background:transparent;color:var(--navy)}
-.btn.line:hover{background:var(--navy);color:var(--oat);border-color:var(--navy)}
-.btn.on-dark{background:var(--oat);color:var(--navy);border-color:var(--oat)}
-.btn.on-dark:hover{background:var(--brick);border-color:var(--brick);color:var(--paper)}
-.btn.line.on-dark{background:transparent;color:var(--oat);border-color:rgba(238,230,216,.55)}
-.btn.line.on-dark:hover{background:var(--oat);color:var(--navy);border-color:var(--oat)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.btn.on-dark{background:var(--oat);color:var(--green-d);border-color:var(--oat)}
+.btn.on-dark:hover{background:var(--gold);border-color:var(--gold)}
+.btn.ghost.on-dark{background:transparent;color:var(--oat);border-color:rgba(238,230,216,.6)}
+.btn.ghost.on-dark:hover{background:var(--oat);color:var(--green-d);border-color:var(--oat)}
 .btn[disabled]{opacity:.45;cursor:not-allowed}
 .btn svg{width:1.1em;height:1.1em;flex:none}
 .tlink{font-weight:600;text-decoration:underline;text-underline-offset:.2em;text-decoration-thickness:1px;color:inherit}
@@ -86,183 +89,251 @@ p{text-wrap:pretty}
 .site-head{position:sticky;top:0;z-index:50;background:var(--oat);border-bottom:1px solid var(--rule)}
 .site-head .wrap{display:flex;align-items:center;gap:1.5rem;min-height:4.5rem}
 .brand{text-decoration:none;line-height:1;display:flex;flex-direction:column;gap:.2rem;margin-right:auto}
-.brand b{font-family:var(--display);font-weight:800;font-size:1.6rem;letter-spacing:-.03em}
+.brand b{font-family:var(--display);font-weight:800;font-size:1.6rem;letter-spacing:-.03em;color:var(--green-d)}
 .brand b span{color:var(--brick)}
 .brand small{font-size:.8rem;color:var(--ink-2)}
-.nav ul{list-style:none;display:flex;gap:1.6rem}
+.nav ul{list-style:none;display:flex;gap:1.5rem}
 .nav a{text-decoration:none;font-weight:600;padding:.4rem 0;border-bottom:2px solid transparent}
 .nav a:hover{border-bottom-color:var(--brick)}
 .head-call{font-weight:600;text-decoration:none;white-space:nowrap}
 .head-call:hover{color:var(--brick)}
-.bag-btn{display:inline-flex;align-items:center;gap:.55rem;min-height:2.75rem;padding:.4rem .5rem .4rem 1rem;border-radius:999px;background:var(--navy);color:var(--oat);font-weight:650}
+.bag-btn{display:inline-flex;align-items:center;gap:.55rem;min-height:2.75rem;padding:.4rem .5rem .4rem 1rem;border-radius:999px;background:var(--green);color:var(--paper);font-weight:650}
+.bag-btn:hover{background:var(--green-d)}
 .bag-btn b{display:inline-grid;place-items:center;min-width:1.85rem;height:1.85rem;padding:0 .4rem;border-radius:999px;background:var(--brick);color:var(--paper);font-size:.9rem}
 .bag-btn.bump b{animation:bump .45s var(--spring)}
 @keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.35)}100%{transform:scale(1)}}
 .burger{display:none;width:2.75rem;height:2.75rem;align-items:center;justify-content:center;border-radius:999px}
-.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:var(--navy);position:relative;transition:transform .25s var(--ease),background .2s;border-radius:2px}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:transform .25s var(--ease),background .2s;border-radius:2px}
 .burger span::before,.burger span::after{content:"";position:absolute;left:0}
 .burger span::before{top:-6px}.burger span::after{top:6px}
 .burger[aria-expanded="true"] span{background:transparent}
 .burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
 .burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
 
-/* ---------- hero ---------- */
-.hero{background:var(--night);color:var(--oat);overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:0;align-items:stretch;width:min(1240px,100% - 2rem)}
-.hero-copy{padding:clamp(3rem,8vw,7rem) clamp(0rem,4vw,3rem) clamp(3rem,7vw,6rem) 0;align-self:center}
-.hero h1{font-size:clamp(2.5rem,5.4vw,4.9rem);margin-bottom:1.5rem}
-.hero .lede{font-size:1.2rem;color:rgba(238,230,216,.82);max-width:34rem;margin-bottom:2rem}
-.hero .actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:2.25rem}
-.hero .where{font-size:.95rem;color:rgba(238,230,216,.7);display:flex;gap:.6rem;align-items:center}
-.hero .where svg{width:1.1rem;height:1.1rem;flex:none;color:var(--brick)}
-.hero-pic{position:relative;margin-right:calc((100vw - min(1240px,100vw - 2rem))/-2)}
-.hero-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 35%}
-.hero-pic{min-height:520px}
+/* ---------- hero: the shopfront ---------- */
+.hero{background:var(--green);color:var(--oat);position:relative;overflow:hidden}
+.awning{position:relative;height:clamp(44px,5vw,64px);background:repeating-linear-gradient(90deg,var(--brick) 0 56px,var(--oat) 56px 112px);box-shadow:inset 0 10px 10px -8px rgba(0,0,0,.3)}
+.awning::after{content:"";position:absolute;left:0;right:0;top:100%;height:28px;background:radial-gradient(circle at 28px 0,var(--brick) 27px,transparent 28px),radial-gradient(circle at 84px 0,var(--oat) 27px,transparent 28px);background-size:112px 28px;background-repeat:repeat-x;filter:drop-shadow(0 6px 0 rgba(0,0,0,.18));z-index:2}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(2rem,5vw,4.5rem);align-items:end;padding-top:clamp(3.5rem,7vw,5.5rem)}
+.hero-copy{padding-bottom:clamp(3rem,7vw,5.5rem);align-self:center}
+.hero h1{font-size:clamp(2.6rem,5.6vw,5rem);margin-bottom:1.5rem;color:var(--paper)}
+.hero h1 .gold{color:var(--gold)}
+.hero .lede{font-size:1.2rem;color:rgba(238,230,216,.85);max-width:34rem;margin-bottom:2rem}
+.hero .actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:2rem}
+.hero .where{font-size:.95rem;color:rgba(238,230,216,.92);display:flex;gap:.6rem;align-items:center}
+.hero .where svg{width:1.1rem;height:1.1rem;flex:none;color:var(--gold)}
+.window{position:relative;justify-self:center;width:min(100%,500px)}
+.window .frame{position:relative;aspect-ratio:4/5;border-radius:999px 999px 0 0;border:14px solid var(--oat);border-bottom:0;overflow:hidden;background:#071621;box-shadow:inset 0 0 0 3px rgba(0,0,0,.25)}
+.window .frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:45% 4%}
+.window .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 0 58%,rgba(255,255,255,.07) 58% 66%,transparent 66%);pointer-events:none}
+.window .letters{position:absolute;left:6%;right:6%;top:6%;z-index:2;width:88%;height:auto;pointer-events:none}
+.sill{position:relative;height:26px;margin:0 -28px;background:var(--wood);border-radius:3px;box-shadow:inset 0 -7px 0 var(--wood-d),0 14px 20px -12px rgba(0,0,0,.55)}
+.display{position:absolute;left:-10px;right:-10px;bottom:22px;display:flex;justify-content:space-between;align-items:flex-end;pointer-events:none;z-index:3}
+.display img{height:clamp(84px,11vw,150px);width:auto;filter:drop-shadow(0 8px 6px rgba(0,0,0,.4))}
+.display .pair{display:flex;align-items:flex-end;gap:0}
+.display .pair img+img{margin-left:-18%;transform:rotate(4deg);height:clamp(72px,9.5vw,128px)}
 
-/* ---------- promise ---------- */
-.promise{background:var(--paper);border-bottom:1px solid var(--rule)}
-.promise ul{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
-.promise li{display:flex;gap:.85rem;align-items:flex-start;padding:1.6rem 1.5rem 1.6rem 0;font-size:.95rem;color:var(--ink-2);line-height:1.45}
-.promise li+li{padding-left:1.5rem;border-left:1px solid var(--rule)}
-.promise svg{width:2rem;height:2rem;flex:none;color:var(--brick)}
-.promise strong{display:block;color:var(--navy);font-family:var(--display);font-weight:700;font-size:1.12rem;line-height:1.2;margin-bottom:.15rem;letter-spacing:-.01em}
+/* ---------- the label panel ---------- */
+.label-sec{padding-block:clamp(4rem,9vw,7rem)}
+.label-sec .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);align-items:center}
+.label-sec h2{font-size:clamp(2.2rem,4.4vw,3.6rem);margin-bottom:1.25rem;color:var(--green-d)}
+.label-sec .lede{color:var(--ink-2);font-size:1.15rem;max-width:32rem}
+.label-sec .lede+.lede{margin-top:1rem}
+.panel{background:#fff;border:3px solid var(--ink);padding:1rem 1.2rem 1.1rem;font-family:var(--sans);color:var(--ink);max-width:460px;width:100%;justify-self:center;box-shadow:10px 10px 0 var(--green);transform:rotate(-1deg)}
+.panel h3{font-family:var(--sans);font-weight:800;font-size:clamp(1.6rem,3vw,2.1rem);letter-spacing:-.02em;line-height:1;padding-bottom:.4rem;border-bottom:10px solid var(--ink)}
+.panel .sub{font-size:.85rem;font-weight:600;padding:.35rem 0;border-bottom:4px solid var(--ink);display:flex;justify-content:space-between}
+.panel dl{display:grid;grid-template-columns:1fr auto}
+.panel dt,.panel dd{padding:.42rem 0;border-bottom:1px solid var(--ink);font-size:.98rem}
+.panel dt{font-weight:600}
+.panel dd{font-weight:800;text-align:right;font-variant-numeric:tabular-nums}
+.panel dd.zero{color:var(--brick)}
+.panel .ing{font-size:.85rem;line-height:1.45;padding-top:.6rem;border-top:4px solid var(--ink);margin-top:-1px}
+.panel .ing b{font-weight:800}
 
-/* ---------- sections ---------- */
-.sec{padding-block:clamp(4rem,9vw,7rem)}
-.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem 3rem;margin-bottom:clamp(2rem,4vw,3rem)}
-.sec h2{font-size:clamp(2.2rem,4.4vw,3.6rem)}
-.sec-head p{max-width:32rem;color:var(--ink-2)}
-
-/* ---------- shop ---------- */
-.shop{--shop-bg:var(--oat);--plinth:var(--oat-2);--acc:var(--brick);background:var(--shop-bg);transition:background .5s var(--ease)}
-.shop[data-pet="cat"]{--shop-bg:var(--fog);--plinth:var(--fog-2);--acc:var(--navy)}
-.bar{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.25rem 2.5rem;align-items:center;margin-bottom:2rem}
-.pet{border:0;position:relative;display:grid;grid-template-columns:1fr 1fr;width:min(420px,100%);height:4.5rem;padding:.4rem;border-radius:999px;background:var(--paper);box-shadow:inset 0 0 0 2px var(--navy)}
+/* ---------- the aisles ---------- */
+.aisle{--wall:var(--oat-2);--acc:var(--green);background:var(--wall);transition:background .6s var(--ease);padding-block:clamp(4rem,8vw,6.5rem) clamp(3rem,6vw,5rem);position:relative}
+.aisle[data-pet="cat"]{--wall:var(--sage);--acc:var(--brick)}
+.aisle-top{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.5rem clamp(2rem,5vw,4rem);align-items:center;margin-bottom:2rem}
+.aisle h2{font-size:clamp(2.2rem,4.4vw,3.6rem);color:var(--green-d);margin-bottom:.6rem}
+.aisle .intro p{color:var(--ink-2);max-width:34rem}
+/* hanging door sign */
+.hang{position:relative;width:clamp(200px,22vw,250px);padding-top:46px;perspective:900px;cursor:pointer}
+.hang::before{content:"";position:absolute;top:0;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--gold-2);box-shadow:inset 0 -2px 0 rgba(0,0,0,.25);z-index:2}
+.hang .str,.door .str{position:absolute;top:6px;left:18%;width:64%;height:42px;overflow:visible}
+.hang .card{position:relative;height:clamp(96px,10vw,116px);transform-style:preserve-3d;transition:transform .8s var(--spring);transform-origin:50% 0}
+.aisle[data-pet="cat"] .hang .card{transform:rotateY(180deg)}
+.hang .face{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:12px;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:0 14px 20px -12px rgba(0,0,0,.45),inset 0 0 0 4px rgba(255,255,255,.18)}
+.hang .face b{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,4vw,2.9rem);letter-spacing:-.03em;line-height:.9}
+.hang .face span{font-family:var(--hand);font-size:1.25rem;font-weight:600;line-height:1}
+.hang .front{background:var(--green);color:var(--paper)}
+.hang .back{background:var(--brick);color:var(--paper);transform:rotateY(180deg)}
+.hang:hover .card{animation:sway 1.4s var(--ease)}
+@keyframes sway{0%,100%{rotate:0deg}30%{rotate:3deg}60%{rotate:-2deg}}
+.pet{border:0;display:inline-flex;gap:.3rem;padding:.3rem;border-radius:999px;background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--rule);margin-top:1rem}
 .pet legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.pet label{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:.6rem;border-radius:999px;cursor:pointer;font-family:var(--display);font-weight:750;font-size:1.55rem;letter-spacing:-.02em;transition:color .35s var(--ease)}
-.pet label svg{width:1.7rem;height:1.7rem}
-.pet input:checked+label{color:var(--paper)}
-.pet input:focus-visible+label{outline:3px solid var(--brick);outline-offset:-6px}
-.pet .knob{position:absolute;top:.4rem;bottom:.4rem;left:.4rem;width:calc(50% - .4rem);border-radius:999px;background:var(--acc);transition:transform .45s var(--spring),background .45s var(--ease)}
-.shop[data-pet="cat"] .knob{transform:translateX(100%)}
-.filters{display:grid;gap:.7rem}
-.frow{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem}
-.frow>span{font-size:.88rem;font-weight:600;color:var(--ink-2);min-width:4.6rem}
-.chip{display:inline-flex;align-items:center;gap:.4rem;min-height:2.4rem;padding:.35rem .85rem;border-radius:999px;background:var(--paper);font-weight:600;font-size:.92rem;box-shadow:inset 0 0 0 1px var(--rule);transition:background .2s,color .2s,box-shadow .2s}
-.chip:hover{box-shadow:inset 0 0 0 1.5px var(--navy)}
+.pet input{position:absolute;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none}
+.pet label{display:inline-flex;align-items:center;gap:.45rem;min-height:2.6rem;padding:.35rem 1.1rem;border-radius:999px;font-weight:700;cursor:pointer;transition:background .3s,color .3s}
+.pet label svg{width:1.25rem;height:1.25rem}
+.pet input:checked+label{background:var(--acc);color:var(--paper)}
+.pet input:focus-visible+label{outline:3px solid var(--brick);outline-offset:2px}
+.filters{display:grid;gap:.6rem;margin-bottom:2.25rem}
+.frow{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem}
+.frow>span{font-family:var(--hand);font-size:1.35rem;font-weight:600;color:var(--ink-2);min-width:5.5rem;line-height:1}
+.chip{display:inline-flex;align-items:center;gap:.4rem;min-height:2.4rem;padding:.35rem .85rem;border-radius:8px;background:var(--paper);font-weight:600;font-size:.92rem;box-shadow:0 1px 0 rgba(0,0,0,.08),inset 0 0 0 1px var(--rule);transition:background .2s,color .2s,transform .2s}
+.chip:hover{transform:translateY(-1px)}
 .chip i{font-style:normal;font-size:.8rem;font-weight:600;color:var(--ink-2);font-variant-numeric:tabular-nums}
-.chip[aria-pressed="true"]{background:var(--navy);color:var(--paper);box-shadow:none}
-.chip[aria-pressed="true"] i{color:rgba(251,248,242,.75)}
-.chip:disabled{opacity:.4;cursor:default;box-shadow:inset 0 0 0 1px var(--rule)}
-.result-line{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem;font-size:.95rem;color:var(--ink-2);min-height:1.6rem}
-.grid{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:clamp(.9rem,2vw,1.5rem)}
-.card{display:flex;flex-direction:column;background:var(--paper);border-radius:var(--r);overflow:hidden;box-shadow:0 1px 0 var(--rule)}
-.plinth{position:relative;display:grid;place-items:center;aspect-ratio:1;background:var(--plinth);padding:12%;width:100%;transition:background .5s var(--ease)}
-.plinth img{position:absolute;inset:11%;width:78%;height:78%;object-fit:contain;mix-blend-mode:multiply;transition:transform .35s var(--ease)}
-.card:hover .plinth img,.card:hover .plinth .ph{transform:translateY(-4px) rotate(-1deg)}
-.badge{position:absolute;top:.7rem;left:.7rem;z-index:2;padding:.2rem .6rem;border-radius:999px;font-size:.78rem;font-weight:650;background:var(--paper);color:var(--navy)}
-.badge.out{background:var(--navy);color:var(--paper)}
-.badge.pk{background:var(--brick);color:var(--paper)}
-.card.out .plinth img,.card.out .plinth .ph{opacity:.45}
-.card .info{display:flex;flex-direction:column;gap:.35rem;padding:1rem 1.1rem 1.1rem;flex:1}
-.brandname{font-size:.8rem;font-weight:650;color:var(--ink-2);letter-spacing:.01em}
-.card h3{font-family:var(--sans);font-weight:650;font-size:1.04rem;line-height:1.3;letter-spacing:0}
-.card h3 button{text-align:left}
-.card h3 button:hover{text-decoration:underline;text-underline-offset:.15em}
-.tag{align-self:flex-start;font-size:.8rem;font-weight:600;padding:.12rem .55rem;border-radius:999px;background:var(--oat);color:var(--navy)}
-.shop[data-pet="cat"] .tag{background:var(--fog)}
-.buy{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-top:auto;padding-top:.6rem}
-.price{font-weight:700;font-variant-numeric:tabular-nums}
-.price small{font-weight:500;color:var(--ink-2);font-size:.85em}
-.qa{display:inline-flex;align-items:center;gap:.35rem;min-height:2.5rem;padding:.3rem .95rem;border-radius:999px;background:var(--navy);color:var(--paper);font-weight:650;font-size:.92rem;transition:background .2s}
-.qa:hover{background:var(--brick)}
+.chip[aria-pressed="true"]{background:var(--acc);color:var(--paper);box-shadow:none}
+.chip[aria-pressed="true"] i{color:rgba(251,248,241,.8)}
+.chip:disabled{opacity:.4;cursor:default;transform:none}
+.result-line{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:.5rem;font-size:.95rem;color:var(--ink-2);min-height:1.6rem}
+/* shelves */
+.shelves{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));column-gap:0;row-gap:clamp(2rem,4vw,3rem)}
+.item{display:flex;flex-direction:column;min-width:0}
+.stage{position:relative;display:block;width:100%;aspect-ratio:1/.92;container-type:inline-size;border-bottom:18px solid var(--wood);box-shadow:0 6px 0 var(--wood-d),0 18px 18px -12px rgba(0,0,0,.4)}
+.stage::before{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:rgba(0,0,0,.08)}
+.stage img{position:absolute;left:50%;bottom:0;height:84%;width:auto;max-width:78%;object-fit:contain;transform:translateX(-50%);transform-origin:50% 100%;transition:transform .35s var(--ease)}
+.stage img.cut{filter:drop-shadow(0 6px 5px rgba(0,0,0,.28))}
+.stage img.flat{mix-blend-mode:multiply}
+.item:hover .stage img,.item:hover .stage .ph{transform:translateX(-50%) translateY(-8px) rotate(-1.5deg)}
+.sticky{position:absolute;top:10%;right:9%;z-index:3;padding:.55rem .7rem .7rem;width:6.2rem;background:#F5E7A3;color:var(--ink);font-family:var(--hand);font-size:1.25rem;font-weight:700;line-height:1;text-align:center;transform:rotate(6deg);box-shadow:0 6px 10px -6px rgba(0,0,0,.35)}
+.stamp{position:absolute;top:8%;left:8%;z-index:3;display:grid;place-items:center;width:4.6rem;height:4.6rem;border-radius:50%;border:2px dashed var(--brick);color:var(--brick);font-weight:800;font-size:.7rem;line-height:1.1;text-align:center;transform:rotate(-12deg);background:rgba(251,248,241,.6)}
+.item.out .stage img,.item.out .stage .ph{opacity:.5;filter:grayscale(.4)}
+.talker{position:relative;margin:0 clamp(.4rem,1vw,.8rem);background:var(--paper);padding:1.15rem 1rem 1rem;display:flex;flex-direction:column;gap:.3rem;flex:1;box-shadow:0 10px 18px -12px rgba(0,0,0,.35);transform:rotate(-.6deg);transform-origin:50% 0}
+.item:nth-child(even) .talker{transform:rotate(.7deg)}
+.item:nth-child(3n) .talker{transform:rotate(-.2deg)}
+.talker::before{content:"";position:absolute;top:-6px;left:50%;width:34px;height:12px;margin-left:-17px;border-radius:3px;background:#6E7A72;box-shadow:inset 0 -3px 0 rgba(0,0,0,.25)}
+.brandname{font-size:.78rem;font-weight:700;color:var(--ink-2);letter-spacing:.02em}
+.talker h3{font-family:var(--sans);font-weight:650;font-size:1.02rem;line-height:1.3;letter-spacing:0}
+.talker h3 button{text-align:left}
+.talker h3 button:hover{text-decoration:underline;text-underline-offset:.15em}
+.tag{align-self:flex-start;font-size:.78rem;font-weight:650;padding:.12rem .55rem;border-radius:999px;background:var(--sage);color:var(--green-d)}
+.aisle[data-pet="cat"] .tag{background:#F3DDD7;color:var(--brick-2)}
+.buy{display:flex;align-items:flex-end;justify-content:space-between;gap:.5rem;margin-top:auto;padding-top:.45rem}
+.hprice{font-family:var(--hand);font-weight:700;font-size:1.95rem;line-height:.9;color:var(--brick)}
+.hprice small{display:block;font-family:var(--sans);font-size:.72rem;font-weight:600;color:var(--ink-2);letter-spacing:.01em;line-height:1.3}
+.qa{display:inline-flex;align-items:center;gap:.35rem;min-height:2.5rem;padding:.3rem .95rem;border-radius:999px;background:var(--green);color:var(--paper);font-weight:650;font-size:.92rem;transition:background .2s;flex:none}
+.qa:hover{background:var(--green-d)}
 .qa svg{width:1rem;height:1rem}
 .qa.done{background:var(--ok)}
 .empty-grid{grid-column:1/-1;padding:2.5rem;border-radius:var(--r);background:var(--paper);text-align:center;color:var(--ink-2)}
 
-/* typographic packshot placeholders */
-.ph{position:relative;display:flex;flex-direction:column;justify-content:center;gap:.35rem;text-align:left;color:var(--k,#fff);background:var(--c);transition:transform .35s var(--ease)}
-.plinth,.pd-pic,.pick .im,.bline .im,.co-lines .im{container-type:inline-size}
-.ph b{font-family:var(--display);font-weight:800;font-size:clamp(.3rem,7.5cqi,1.25rem);line-height:1.02;letter-spacing:-.02em;overflow-wrap:anywhere}
-.ph span{font-size:clamp(.22rem,3.6cqi,.66rem);font-weight:700;letter-spacing:.06em;opacity:.85}
-.ph.bag{width:68%;aspect-ratio:3/4;padding:16% 10% 10%;border-radius:6px 6px 12px 12px;box-shadow:inset 0 10px 0 rgba(0,0,0,.22),inset 0 -6px 0 rgba(0,0,0,.08),0 14px 22px -14px rgba(0,0,0,.5)}
-.ph.box{width:82%;aspect-ratio:5/4;padding:10%;border-radius:6px;box-shadow:inset 0 0 0 4px rgba(255,255,255,.25),0 14px 22px -14px rgba(0,0,0,.5)}
-.ph.collar{width:88%;aspect-ratio:3/1;padding:0 28% 0 10%;border-radius:999px;justify-content:center;box-shadow:inset 0 0 0 5px rgba(255,255,255,.18),0 12px 20px -12px rgba(0,0,0,.5)}
-.ph.collar::after{content:"";position:absolute;right:9%;top:50%;width:14%;aspect-ratio:1;transform:translateY(-50%);border:4px solid #d9c9a3;border-radius:6px}
-.ph.bake{width:74%;aspect-ratio:1;border-radius:50%;padding:14%;justify-content:center;align-items:center;text-align:center;background:var(--paper);color:var(--brick);box-shadow:inset 0 0 0 3px var(--brick),inset 0 0 0 9px var(--paper),inset 0 0 0 10px var(--brick)}
-.ph.bake span{color:var(--navy)}
-.ph.bake b{font-size:clamp(.3rem,10cqi,1.4rem)}
-.ph.bake span{font-size:clamp(.22rem,4.2cqi,.7rem)}
-.ph.lg b{font-size:clamp(1rem,7cqi,2.1rem)}
-.ph.lg span{font-size:clamp(.6rem,3cqi,.8rem)}
+/* drawn placeholders (no packshot available) */
+.ph{position:absolute;left:50%;bottom:0;transform:translateX(-50%);transform-origin:50% 100%;display:flex;flex-direction:column;justify-content:center;gap:.3em;text-align:left;color:var(--k,#fff);background:var(--c);transition:transform .35s var(--ease)}
+.ph b{font-family:var(--display);font-weight:800;font-size:clamp(.3rem,7cqi,1.3rem);line-height:1.02;letter-spacing:-.02em;overflow-wrap:break-word;hyphens:auto}
+.ph span{font-size:clamp(.22rem,3.4cqi,.66rem);font-weight:700;letter-spacing:.06em;opacity:.85}
+.ph.bag{width:46%;height:78%;padding:18% 6% 8%;border-radius:6px 6px 10px 10px;box-shadow:inset 0 10px 0 rgba(0,0,0,.22),inset -8px 0 0 rgba(0,0,0,.08),0 10px 14px -10px rgba(0,0,0,.5)}
+.ph.bag b{font-size:clamp(.3rem,5.2cqi,1.05rem)}
+.ph.box{width:62%;height:50%;padding:6% 7%;border-radius:4px;box-shadow:inset 0 0 0 4px rgba(255,255,255,.28),inset -10px -10px 0 rgba(0,0,0,.08),0 10px 14px -10px rgba(0,0,0,.5)}
+.ph.collar{width:44%;height:76%;padding:14% 6% 6%;justify-content:flex-start;border-radius:6px;background:var(--paper);color:var(--ink);box-shadow:inset 0 0 0 1px rgba(0,0,0,.08),0 10px 14px -10px rgba(0,0,0,.5)}
+.ph.collar::before{content:"";position:absolute;top:6%;left:50%;width:22%;aspect-ratio:2.4/1;margin-left:-11%;border-radius:999px;background:var(--wall,var(--oat-2));box-shadow:inset 0 1px 2px rgba(0,0,0,.3)}
+.ph.collar::after{content:"";position:absolute;left:-8%;right:-8%;top:58%;height:14%;border-radius:4px;background:var(--c);box-shadow:inset 0 0 0 3px rgba(255,255,255,.18),0 4px 6px -3px rgba(0,0,0,.4)}
+.ph.collar span{color:var(--ink-2);opacity:1}
+.ph.bake{width:62%;aspect-ratio:1/.62;padding:4% 6%;border-radius:10px 10px 6px 6px;justify-content:center;align-items:center;text-align:center;background:var(--paper);color:var(--brick);box-shadow:inset 0 0 0 3px var(--brick),inset 0 -12px 0 rgba(168,55,42,.12),0 10px 14px -10px rgba(0,0,0,.45)}
+.ph.bake b{font-size:clamp(.3rem,8cqi,1.35rem)}
+.ph.bake span{color:var(--ink-2);font-size:clamp(.22rem,3.6cqi,.66rem)}
+.ph.lg b{font-size:clamp(.9rem,6.5cqi,2rem)}
+.ph.lg span{font-size:clamp(.55rem,2.8cqi,.8rem)}
 
-/* ---------- auto-ship ---------- */
-.auto{background:var(--paper);border-block:1px solid var(--rule)}
-.auto .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);align-items:center}
-.auto h2{margin-bottom:1.25rem}
-.auto .lede{color:var(--ink-2);max-width:32rem;margin-bottom:2rem}
+/* ---------- auto-ship: the wall calendar ---------- */
+.standing{padding-block:clamp(4rem,9vw,7rem)}
+.standing .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,6vw,5rem);align-items:center}
+.standing h2{font-size:clamp(2.2rem,4.4vw,3.6rem);color:var(--green-d);margin-bottom:1.25rem}
+.standing .lede{color:var(--ink-2);font-size:1.15rem;max-width:32rem;margin-bottom:2rem}
 .steps{list-style:none;counter-reset:s;display:grid;gap:1.1rem}
-.steps li{counter-increment:s;display:grid;grid-template-columns:2.4rem 1fr;gap:.9rem;align-items:start}
-.steps li::before{content:counter(s);display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--oat);font-family:var(--display);font-weight:800;font-size:1.1rem}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.6rem 1fr;gap:.9rem;align-items:start}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--green);color:var(--paper);font-family:var(--display);font-weight:800;font-size:1.1rem}
 .steps b{display:block;font-weight:650}
 .steps span{color:var(--ink-2);font-size:.97rem}
-.plan{background:var(--navy);color:var(--oat);border-radius:22px;padding:clamp(1.4rem,3vw,2.2rem);box-shadow:0 30px 60px -36px rgba(8,22,34,.7);position:relative}
-.plan-top{display:grid;grid-template-columns:5.5rem 1fr;gap:1.1rem;align-items:center;padding-bottom:1.3rem;border-bottom:1px solid var(--rule-inv)}
-.plan-top .im{aspect-ratio:1;border-radius:12px;background:var(--oat-2);padding:10%;display:grid;place-items:center}
-.plan-top img{width:100%;height:100%;object-fit:contain}
-.plan-top p{font-size:.88rem;color:rgba(238,230,216,.7)}
-.plan-top h3{font-size:1.35rem;margin:.15rem 0 .2rem;color:var(--oat)}
-.plan-top .num{font-weight:650}
-.plan-top s{color:rgba(238,230,216,.55);margin-left:.4rem;font-weight:400}
-.plan ol{list-style:none;margin:1.1rem 0 1.4rem}
-.plan li{display:flex;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:1px dashed var(--rule-inv);font-size:.97rem}
-.plan li span:last-child{color:rgba(238,230,216,.7)}
-.plan li:first-child span:last-child{color:var(--paper);font-weight:650}
-.plan .stamp{position:absolute;top:-1rem;right:1.25rem;background:var(--brick);color:var(--paper);font-weight:700;font-size:.9rem;padding:.4rem .85rem;border-radius:999px;transform:rotate(3deg)}
+.cal{position:relative;background:var(--paper);border-radius:10px;padding:2.4rem clamp(1rem,3vw,1.75rem) 1.5rem;box-shadow:0 30px 50px -30px rgba(0,0,0,.45);transform:rotate(1deg)}
+.cal::before,.cal::after{content:"";position:absolute;top:.75rem;width:16px;height:16px;border-radius:50%;background:var(--oat);box-shadow:inset 0 2px 3px rgba(0,0,0,.3)}
+.cal::before{left:24%}.cal::after{right:24%}
+.cal-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;border-bottom:3px solid var(--brick);padding-bottom:.6rem;margin-bottom:1rem}
+.cal-head h3{font-size:1.45rem;color:var(--green-d)}
+.cal-head span{font-family:var(--hand);font-size:1.35rem;font-weight:700;color:var(--brick)}
+.months{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.month h4{font-family:var(--display);font-weight:750;font-size:1rem;margin-bottom:.4rem;letter-spacing:-.01em}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;font-size:.72rem;text-align:center;font-variant-numeric:tabular-nums}
+.days i{font-style:normal;font-weight:700;color:var(--ink-2);padding-bottom:.15rem}
+.days span{position:relative;display:grid;place-items:center;aspect-ratio:1;border-radius:4px;color:var(--ink-2)}
+.days span.past{opacity:.35}
+.days span.hit{color:var(--paper);font-weight:800;z-index:1}
+.days span.hit::before{content:"";position:absolute;inset:-14%;z-index:-1;background:var(--brick);-webkit-mask:var(--paw) center/contain no-repeat;mask:var(--paw) center/contain no-repeat;transform:rotate(var(--rot,-12deg))}
+.cal{--paw:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='21' rx='8.5' ry='7.5'/%3E%3Cellipse cx='6' cy='12' rx='3.4' ry='4.4'/%3E%3Cellipse cx='12.5' cy='6.5' rx='3.4' ry='4.6'/%3E%3Cellipse cx='19.5' cy='6.5' rx='3.4' ry='4.6'/%3E%3Cellipse cx='26' cy='12' rx='3.4' ry='4.4'/%3E%3C/svg%3E")}
+.order{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:center;margin-top:1.25rem;padding-top:1.1rem;border-top:1px dashed var(--rule)}
+.order .im{aspect-ratio:1;display:grid;place-items:end center}
+.order .im img{max-height:100%;width:auto;filter:drop-shadow(0 4px 3px rgba(0,0,0,.25))}
+.order b{display:block;font-weight:700}
+.order small{display:block;color:var(--ink-2);font-size:.88rem}
+.order s{color:var(--ink-2);margin-left:.3rem}
+.dates{list-style:none;display:flex;flex-wrap:wrap;gap:.35rem 1rem;margin-top:.9rem;font-size:.9rem;color:var(--ink-2)}
+.dates li::before{content:"";display:inline-block;width:.6rem;height:.6rem;border-radius:50%;background:var(--brick);margin-right:.4rem;vertical-align:.05rem}
 
-/* ---------- finder ---------- */
-.finder{background:var(--night);color:var(--oat)}
-.finder .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
-.finder .pic{border-radius:22px;overflow:hidden;aspect-ratio:4/5;background:#060508}
-.finder .pic img{width:100%;height:100%;object-fit:cover;object-position:50% 70%}
-.finder h2{color:var(--oat);margin-bottom:.8rem}
-.finder .lede{color:rgba(238,230,216,.78);max-width:34rem;margin-bottom:2rem}
-.quiz{background:var(--paper);color:var(--navy);border-radius:22px;padding:clamp(1.25rem,3vw,2rem)}
+/* ---------- finder: at the counter ---------- */
+.counter{background:var(--green-d);color:var(--oat);padding-block:clamp(4rem,9vw,7rem) 0;position:relative}
+.counter .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(2rem,5vw,4.5rem);align-items:end}
+.counter h2{font-size:clamp(2.2rem,4.4vw,3.6rem);color:var(--paper);margin-bottom:.9rem}
+.counter .lede{color:rgba(238,230,216,.8);max-width:32rem;margin-bottom:2rem;font-size:1.1rem}
+.polaroid{background:#fff;padding:12px 12px 46px;box-shadow:0 22px 34px -22px rgba(0,0,0,.6);position:relative;width:min(100%,360px)}
+.polaroid img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.polaroid figcaption{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-family:var(--hand);font-size:1.45rem;font-weight:600;color:var(--ink)}
+.polaroid::before{content:"";position:absolute;top:-12px;left:50%;width:110px;height:28px;margin-left:-55px;background:rgba(238,230,216,.75);transform:rotate(-3deg)}
+.counter .polaroid{transform:rotate(-4deg);margin:0 auto 3.5rem}
+.counter-top{height:34px;background:var(--wood);box-shadow:inset 0 -9px 0 var(--wood-d),inset 0 3px 0 var(--wood-l);margin-top:-1px}
+.quiz{background:var(--paper);color:var(--ink);border-radius:16px 16px 0 0;padding:clamp(1.25rem,3vw,2rem);min-height:250px}
+.quiz:has(.receipt){background:var(--oat-2)}
 .q-top{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.1rem;font-size:.9rem;color:var(--ink-2);min-height:2rem}
 .prog{display:flex;gap:.35rem}
 .prog i{width:2.2rem;height:.4rem;border-radius:999px;background:var(--oat-2)}
 .prog i.on{background:var(--brick)}
-.quiz h3{font-size:clamp(1.4rem,2.6vw,1.85rem);margin-bottom:1rem}
+.quiz h3{font-size:clamp(1.4rem,2.6vw,1.85rem);margin-bottom:1rem;color:var(--green-d)}
 .quiz h3:focus{outline:none}
 .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem}
 .opt{text-align:left;padding:.95rem 1rem;border-radius:12px;background:var(--oat);font-weight:650;line-height:1.3;transition:background .2s,color .2s,transform .2s var(--ease)}
 .opt span{display:block;font-weight:400;font-size:.88rem;color:var(--ink-2);margin-top:.2rem}
-.opt:hover{background:var(--navy);color:var(--paper)}
-.opt:hover span{color:rgba(251,248,242,.75)}
-.picks{list-style:none;display:grid;gap:.75rem;margin-bottom:1.1rem}
-.pick{display:grid;grid-template-columns:4.75rem minmax(0,1fr) auto;gap:1rem;align-items:center;padding:.75rem;border-radius:14px;background:var(--oat)}
-.pick .im{aspect-ratio:1;border-radius:10px;background:var(--oat-2);display:grid;place-items:center;padding:8%;overflow:hidden}
-.pick .im img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
-
-.pick b{display:block;font-weight:650;line-height:1.25}
-.pick small{display:block;color:var(--ink-2);font-size:.86rem;line-height:1.4;margin-top:.15rem}
-.pick .btn{min-height:2.5rem;padding:.4rem 1rem;font-size:.92rem}
-.talk{font-size:.95rem;color:var(--ink-2);padding:.9rem 1rem;border-left:3px solid var(--brick);background:var(--oat);border-radius:0 10px 10px 0;margin-bottom:1rem}
-.q-foot{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.opt:hover{background:var(--green);color:var(--paper);transform:translateY(-2px)}
+.opt:hover span{color:rgba(251,248,241,.8)}
+.q-foot{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;margin-top:1rem}
+/* the receipt */
+.receipt{--z:9px;position:relative;background:#FFFEFA;font-family:var(--mono);font-size:.92rem;line-height:1.45;color:#2a2a2a;padding:1.25rem 1.25rem 2rem;margin:-.25rem auto .5rem;max-width:30rem;box-shadow:0 18px 26px -20px rgba(0,0,0,.5);
+  -webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - var(--z)) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/calc(2*var(--z)) var(--z) repeat-x;
+          mask:linear-gradient(#000 0 0) top/100% calc(100% - var(--z)) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/calc(2*var(--z)) var(--z) repeat-x;
+  animation:print .7s steps(14) both}
+@keyframes print{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+.receipt h3{font-family:var(--mono);font-weight:700;font-size:1.05rem;letter-spacing:.06em;text-align:center;color:#2a2a2a;margin:0}
+.receipt h3:focus{outline:none}
+.receipt .c{text-align:center}
+.receipt hr{border:0;border-top:1.5px dashed #9a9a9a;margin:.7rem 0}
+.receipt ol{list-style:none;display:grid;gap:.8rem}
+.receipt li{display:grid;grid-template-columns:3.2rem 1fr;gap:.75rem;align-items:start}
+.receipt .im{aspect-ratio:1;display:grid;place-items:end center;container-type:inline-size;position:relative}
+.receipt .im img{max-height:100%;width:auto;mix-blend-mode:multiply}
+.receipt .im .ph{width:70%;height:90%}
+.receipt b{font-weight:700}
+.receipt .row{display:flex;justify-content:space-between;gap:.5rem}
+.receipt .why{display:block;font-size:.84rem;color:#555;margin:.15rem 0 .35rem}
+.receipt .rbtn{font-family:var(--mono);font-weight:700;font-size:.85rem;text-decoration:underline;text-underline-offset:.2em;color:var(--green)}
+.receipt .rbtn:hover{color:var(--brick)}
+.receipt .note{font-size:.84rem}
 
 /* ---------- grooming ---------- */
+.groom{padding-block:clamp(4rem,9vw,7rem)}
 .groom .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
-.groom h2{margin-bottom:1.1rem}
-.groom .lede{color:var(--ink-2);max-width:34rem;margin-bottom:1.75rem}
-.groom .photo{border-radius:22px;overflow:hidden;margin-top:2rem}
+.groom h2{font-size:clamp(2.2rem,4.4vw,3.6rem);color:var(--green-d);margin-bottom:1.1rem}
+.groom .lede{color:var(--ink-2);max-width:34rem;margin-bottom:1.75rem;font-size:1.1rem}
+.groom .photo{border-radius:18px;overflow:hidden;margin-top:2rem}
 .groom .photo img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:35% 50%}
-.services{list-style:none;display:grid;gap:0;border-top:1px solid var(--rule)}
+.services{list-style:none;display:grid;border-top:1px solid var(--rule)}
 .services li{display:grid;grid-template-columns:9.5rem 1fr;gap:1rem;padding:.95rem 0;border-bottom:1px solid var(--rule)}
 .services b{font-weight:650}
 .services span{color:var(--ink-2)}
-.card-form{background:var(--paper);border-radius:22px;padding:clamp(1.25rem,3vw,2.25rem);box-shadow:0 1px 0 var(--rule)}
-.card-form h3{font-size:1.6rem;margin-bottom:.35rem}
-.card-form>p{color:var(--ink-2);margin-bottom:1.25rem;font-size:.97rem}
+.appt{position:relative;background:var(--paper);border-radius:6px;box-shadow:0 24px 40px -28px rgba(0,0,0,.45);overflow:hidden}
+.appt-head{background:var(--green);color:var(--paper);padding:1.25rem 4rem 1.1rem clamp(1.25rem,3vw,2rem);position:relative}
+.appt-head h3{font-size:1.6rem}
+.appt-head p{font-family:var(--hand);font-size:1.55rem;font-weight:700;line-height:1.1;color:#F1CB78}
+.appt-head::after{content:"";position:absolute;top:50%;right:1.5rem;width:22px;height:22px;margin-top:-11px;border-radius:50%;background:var(--oat);box-shadow:inset 0 2px 3px rgba(0,0,0,.35)}
+.appt form{padding:clamp(1.25rem,3vw,2rem)}
+.appt .stub{border-top:2px dashed var(--rule);padding:1rem clamp(1.25rem,3vw,2rem) 1.25rem;font-size:.9rem;color:var(--ink-2);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.appt .stub b{color:var(--ink)}
 
 /* forms */
 .form{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1rem}
@@ -270,131 +341,164 @@ p{text-wrap:pretty}
 .f.full{grid-column:1/-1}
 .f label,.lbl{font-size:.9rem;font-weight:650}
 .f label em{font-style:normal;font-weight:400;color:var(--ink-2)}
-.f input,.f select,.f textarea{width:100%;min-height:2.9rem;padding:.65rem .85rem;border-radius:10px;border:1.5px solid rgba(20,36,58,.28);background:#fff;font-size:1rem}
+.f input,.f select,.f textarea{width:100%;min-height:2.9rem;padding:.65rem .85rem;border-radius:10px;border:1.5px solid rgba(29,38,32,.28);background:#fff;font-size:1rem}
 .f textarea{min-height:5rem;resize:vertical}
-.f input:focus-visible,.f select:focus-visible,.f textarea:focus-visible{outline:3px solid var(--brick);outline-offset:1px;border-color:var(--navy)}
+.f input:focus-visible,.f select:focus-visible,.f textarea:focus-visible{outline:3px solid var(--brick);outline-offset:1px;border-color:var(--green)}
 .f [aria-invalid="true"]{border-color:var(--err);box-shadow:0 0 0 1px var(--err)}
-.err{font-size:.85rem;color:var(--err);font-weight:600;min-height:0}
+.err{font-size:.85rem;color:var(--err);font-weight:600}
 .err:empty{display:none}
 .hint{font-size:.85rem;color:var(--ink-2)}
 .hint.good{color:var(--ok);font-weight:600}
 .seg{position:relative;display:flex;flex-wrap:wrap;gap:.45rem}
-.seg input,.freq input,.pet input{position:absolute;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none}
-.seg label{display:inline-flex;align-items:center;min-height:2.6rem;padding:.4rem .95rem;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1.5px rgba(20,36,58,.28);font-weight:600;font-size:.94rem;cursor:pointer;transition:background .2s,color .2s}
-.seg input:checked+label{background:var(--navy);color:var(--paper);box-shadow:none}
+.seg input,.freq input{position:absolute;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none}
+.seg label{display:inline-flex;align-items:center;min-height:2.6rem;padding:.4rem .95rem;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1.5px rgba(29,38,32,.28);font-weight:600;font-size:.94rem;cursor:pointer;transition:background .2s,color .2s}
+.seg input:checked+label{background:var(--green);color:var(--paper);box-shadow:none}
 .seg input:focus-visible+label{outline:3px solid var(--brick);outline-offset:2px}
-.seg input:disabled+label{opacity:.4;cursor:not-allowed}
 fieldset{border:0;min-width:0}
 legend{font-family:var(--display);font-weight:750;font-size:1.2rem;letter-spacing:-.01em;margin-bottom:.75rem;padding:0}
-.ok-msg{margin-top:1rem;padding:1rem 1.1rem;border-radius:12px;background:#E3EEE6;color:#1E4A31;font-weight:600}
+legend.lbl{font-family:var(--sans);font-size:.9rem;font-weight:650;letter-spacing:0;margin-bottom:.4rem}
+.ok-msg{margin-top:1rem;padding:1rem 1.1rem;border-radius:12px;background:var(--sage);color:var(--green-d);font-weight:600}
 .ok-msg:empty{display:none}
 
-/* ---------- bakery ---------- */
-.bakery{background:var(--paper);border-block:1px solid var(--rule)}
-.bakery .grid{grid-template-columns:repeat(4,minmax(0,1fr))}
-.bakery .card{background:var(--oat)}
-.bakery .tag{background:var(--paper)}
-.bakery .plinth{--plinth:var(--oat-2)}
+/* ---------- bakery: the chalkboard ---------- */
+.bakery{padding-block:clamp(4rem,8vw,6rem);background:var(--oat-2)}
+.board{position:relative;max-width:980px;margin:0 auto;background:radial-gradient(ellipse at 20% 15%,rgba(255,255,255,.06),transparent 45%),radial-gradient(ellipse at 85% 80%,rgba(255,255,255,.04),transparent 40%),var(--chalk);color:#F2EEE3;border:16px solid var(--wood);border-radius:6px;padding:clamp(1.75rem,5vw,3.25rem) clamp(1.25rem,5vw,3.5rem);box-shadow:inset 0 0 0 2px rgba(0,0,0,.3),inset 0 0 70px rgba(0,0,0,.35),0 4px 0 var(--wood-d),0 30px 50px -30px rgba(0,0,0,.55)}
+.board h2{font-family:var(--hand);font-weight:700;font-size:clamp(2.8rem,6vw,4.4rem);line-height:1;letter-spacing:0;color:#F7F3E8;text-align:center}
+.board .sub{text-align:center;font-family:var(--hand);font-size:1.45rem;color:var(--gold);margin:.3rem 0 1.75rem}
+.menu{list-style:none;display:grid;gap:1.1rem;max-width:44rem;margin:0 auto}
+.menu li{display:grid;grid-template-columns:auto 1fr auto auto;gap:.9rem;align-items:baseline}
+.menu .n{font-family:var(--hand);font-weight:700;font-size:clamp(1.6rem,3vw,2.05rem);line-height:1}
+.menu .d{grid-column:1/-1;grid-row:2;font-size:.95rem;color:rgba(242,238,227,.72);margin-top:-.35rem}
+.menu .lead{border-bottom:2px dotted rgba(242,238,227,.45);transform:translateY(-.35rem)}
+.menu .p{font-family:var(--hand);font-weight:700;font-size:clamp(1.5rem,2.8vw,1.9rem);line-height:1;color:var(--gold)}
+.chalk-btn{align-self:center;min-height:2.4rem;padding:.25rem .9rem;border-radius:999px;border:2px solid rgba(242,238,227,.75);color:#F7F3E8;font-weight:650;font-size:.9rem;transition:background .2s,color .2s}
+.chalk-btn:hover{background:#F2EEE3;color:var(--chalk)}
+.chalk-btn.done{background:var(--gold);border-color:var(--gold);color:var(--chalk)}
+.board .foot{margin-top:2rem;text-align:center;font-family:var(--hand);font-size:1.35rem;color:rgba(242,238,227,.8)}
+.doodle{position:absolute;width:clamp(56px,8vw,90px);height:auto;color:rgba(242,238,227,.55)}
+.doodle.a{top:1.25rem;left:1.5rem;transform:rotate(-18deg)}
+.doodle.b{bottom:1.25rem;right:1.5rem;transform:rotate(14deg)}
 
-/* ---------- family ---------- */
-.family .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
-.family .photo{border-radius:22px;overflow:hidden}
-.family .photo img{width:100%;aspect-ratio:3/2;object-fit:cover}
-.family h2{margin-bottom:1rem}
-.family .lede{font-size:1.2rem;color:var(--ink-2);margin-bottom:2rem}
-.review{border-top:3px solid var(--brick);padding-top:1.25rem}
-.review p{font-family:var(--display);font-weight:600;font-size:clamp(1.25rem,2.2vw,1.55rem);line-height:1.3;letter-spacing:-.01em}
-.review footer{margin-top:.75rem;font-size:.92rem;color:var(--ink-2)}
+/* ---------- family: the wall ---------- */
+.family{padding-block:clamp(4rem,9vw,7rem)}
+.family .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);align-items:center}
+.family .pics{position:relative;min-height:420px}
+.family .polaroid{width:min(86%,440px);transform:rotate(-3deg)}
+.family .polaroid img{aspect-ratio:3/2}
+.index-card{position:absolute;right:0;bottom:-3.25rem;width:min(64%,320px);padding:1.4rem 1.25rem 1.1rem;background:#fff;background-image:repeating-linear-gradient(to bottom,transparent 0 27px,rgba(80,120,170,.25) 27px 28px);background-position:0 46px;border-top:4px solid rgba(168,55,42,.5);box-shadow:0 18px 28px -18px rgba(0,0,0,.5);transform:rotate(3deg)}
+.index-card::before{content:"";position:absolute;top:-.6rem;left:50%;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--brick);box-shadow:0 3px 4px rgba(0,0,0,.35),inset -3px -3px 0 rgba(0,0,0,.15)}
+.index-card p{font-family:var(--hand);font-size:1.4rem;font-weight:600;line-height:1.17;color:#26303a}
+.index-card footer{margin-top:.6rem;font-size:.82rem;color:var(--ink-2)}
+.family h2{font-size:clamp(2.2rem,4.4vw,3.6rem);color:var(--green-d);margin-bottom:1rem}
+.family .lede{font-size:1.2rem;color:var(--ink-2)}
 
-/* ---------- visit ---------- */
-.visit{background:var(--navy);color:var(--oat)}
-.visit .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem)}
-.visit h2{color:var(--oat);margin-bottom:1.5rem}
-.vinfo{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule-inv)}
-.vinfo>div{padding:1.2rem 1rem 1.2rem 0;border-bottom:1px solid var(--rule-inv)}
-.vinfo h3{font-family:var(--sans);font-size:.9rem;font-weight:650;letter-spacing:0;color:rgba(238,230,216,.7);margin-bottom:.3rem}
+/* ---------- visit: the door ---------- */
+.visit{background:var(--oat-2);padding-block:clamp(4rem,9vw,7rem) 0;overflow:hidden}
+.visit .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(2rem,6vw,5rem);align-items:end}
+.doorway{justify-self:center;width:min(100%,330px);padding:16px 16px 0;background:var(--oat);border-radius:8px 8px 0 0;box-shadow:inset 0 0 0 2px rgba(0,0,0,.06)}
+.door{position:relative;aspect-ratio:1/2.05;background:var(--green);border-radius:3px 3px 0 0;padding:9% 10% 0;display:grid;grid-template-rows:1.25fr .9fr;gap:7%;box-shadow:inset -10px 0 0 rgba(0,0,0,.08),inset 0 0 0 3px rgba(0,0,0,.12)}
+.door .glass{position:relative;border-radius:3px;background:#173126;box-shadow:inset 0 0 0 6px var(--green-2),inset 0 0 0 8px rgba(0,0,0,.25);overflow:hidden}
+.door .glass::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 0 45%,rgba(255,255,255,.08) 45% 55%,transparent 55%)}
+.door .glass .gl{position:absolute;left:0;right:0;bottom:12%;text-align:center;font-family:var(--display);font-weight:800;font-size:clamp(.9rem,2vw,1.15rem);color:var(--gold);letter-spacing:.01em;line-height:1.1}
+.door .glass .gl small{display:block;font-family:var(--sans);font-weight:600;font-size:.62em;letter-spacing:.06em;opacity:.85}
+.door .panelx{border-radius:3px;box-shadow:inset 0 0 0 6px var(--green-2),inset 0 0 0 9px rgba(0,0,0,.18),inset 0 0 0 14px rgba(255,255,255,.05)}
+.door .plate{position:absolute;z-index:3;top:2.2%;left:50%;transform:translateX(-50%);padding:.15rem .7rem;background:var(--gold);color:var(--green-d);font-family:var(--display);font-weight:800;font-size:1.05rem;border-radius:4px;box-shadow:inset 0 -2px 0 var(--gold-2),0 2px 3px rgba(0,0,0,.3);letter-spacing:.02em}
+.door .handle{position:absolute;right:9%;top:55%;width:12px;height:56px;border-radius:999px;background:var(--gold);box-shadow:inset -3px 0 0 var(--gold-2),2px 3px 4px rgba(0,0,0,.35)}
+.door .kick{position:absolute;left:0;right:0;bottom:0;height:7%;background:var(--gold);box-shadow:inset 0 3px 0 rgba(255,255,255,.25),inset 0 -3px 0 var(--gold-2)}
+.door .sign{position:absolute;top:13%;left:50%;width:58%;transform:translateX(-50%) rotate(-3deg);padding-top:22px;z-index:2}
+.door .sign .str{top:0;height:24px;left:22%;width:56%}
+.door .sign .str path{stroke:#d8c7a6}
+.door .sign span{display:block;background:var(--paper);color:var(--brick);text-align:center;font-family:var(--hand);font-weight:700;font-size:clamp(1.05rem,2.4vw,1.45rem);line-height:1;padding:.45rem .3rem .5rem;border-radius:5px;box-shadow:0 6px 8px -4px rgba(0,0,0,.45)}
+.step{height:16px;margin:0 -16px;background:#bfb3a0;box-shadow:inset 0 3px 0 rgba(255,255,255,.3)}
+.visit-info{padding-bottom:clamp(3rem,6vw,5rem)}
+.visit h2{font-size:clamp(2.2rem,4.4vw,3.6rem);color:var(--green-d);margin-bottom:1.5rem}
+.vinfo{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule)}
+.vinfo>div{padding:1.1rem 1rem 1.1rem 0;border-bottom:1px solid var(--rule)}
+.vinfo h3{font-family:var(--sans);font-size:.88rem;font-weight:650;letter-spacing:0;color:var(--ink-2);margin-bottom:.25rem}
 .vinfo p,.vinfo address{font-style:normal}
-.vinfo a{color:var(--oat);font-weight:600}
-.vinfo a:hover{color:#F2B8A9}
-.visit .actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
-.svc-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
-.svc-list li{display:flex;gap:.75rem;align-items:center;padding:1rem 1.1rem;border-radius:14px;background:rgba(238,230,216,.07);font-weight:600}
-.svc-list svg{width:1.5rem;height:1.5rem;flex:none;color:#F2B8A9}
-.visit .note{margin-top:1.25rem;color:rgba(238,230,216,.7);font-size:.95rem}
+.vinfo a{font-weight:600}
+.vinfo a:hover{color:var(--brick)}
+.svc-list{list-style:none;display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.5rem}
+.svc-list li{display:inline-flex;gap:.5rem;align-items:center;padding:.45rem .85rem;border-radius:999px;background:var(--paper);font-weight:600;font-size:.92rem}
+.svc-list svg{width:1.1rem;height:1.1rem;flex:none;color:var(--green)}
+.visit .actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.visit .note{margin-top:1.25rem;color:var(--ink-2);font-size:.95rem}
 
 /* ---------- footer ---------- */
-.site-foot{background:var(--night);color:rgba(238,230,216,.75);padding-block:3.5rem 2.5rem;font-size:.95rem}
+.site-foot{background:var(--green-d);color:rgba(238,230,216,.78);padding-block:3.5rem 2.5rem;font-size:.95rem}
 .site-foot .top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);padding-bottom:2.5rem;border-bottom:1px solid var(--rule-inv)}
 .site-foot .name{font-family:var(--display);font-weight:800;font-size:1.8rem;color:var(--oat);letter-spacing:-.03em;margin-bottom:.6rem}
-.site-foot .name span{color:#F2B8A9}
+.site-foot .name span{color:var(--gold)}
 .site-foot address{font-style:normal;line-height:1.75}
 .site-foot a{color:var(--oat)}
-.site-foot a:hover{color:#F2B8A9}
+.site-foot a:hover{color:var(--gold)}
 .news label{display:block;color:var(--oat);font-weight:650;margin-bottom:.25rem}
 .news p{margin-bottom:.9rem}
 .news .row{display:flex;gap:.5rem;max-width:30rem}
-.news input{flex:1;min-width:0;min-height:3rem;padding:.7rem 1rem;border-radius:999px;border:0;background:var(--oat);color:var(--navy)}
-.news input:focus-visible{outline:3px solid #F2B8A9;outline-offset:2px}
+.news input{flex:1;min-width:0;min-height:3rem;padding:.7rem 1rem;border-radius:999px;border:0;background:var(--oat);color:var(--ink)}
+.news input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .news .note{margin-top:.6rem;font-size:.88rem;min-height:1.3em;color:var(--oat)}
 .site-foot .bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem 2rem;padding-top:1.5rem;font-size:.88rem}
 
 /* ---------- dialogs ---------- */
-dialog{border:0;padding:0;color:var(--navy);background:var(--paper);max-height:calc(100dvh - 2rem);overflow:auto;overscroll-behavior:contain}
-dialog::backdrop{background:rgba(8,22,34,.6)}
+dialog{border:0;padding:0;color:var(--ink);background:var(--paper);max-height:calc(100dvh - 2rem);overflow:auto;overscroll-behavior:contain}
+dialog::backdrop{background:rgba(20,40,30,.6)}
 dialog[open]{animation:pop .28s var(--ease)}
 @keyframes pop{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:none}}
 .x{position:absolute;top:.75rem;right:.75rem;z-index:3;width:2.75rem;height:2.75rem;border-radius:50%;display:grid;place-items:center;background:var(--paper);box-shadow:0 0 0 1px var(--rule)}
-.x:hover{background:var(--navy);color:var(--paper)}
+.x:hover{background:var(--green);color:var(--paper)}
 .x svg{width:1.1rem;height:1.1rem}
-
-/* product */
-#product{width:min(960px,100% - 2rem);border-radius:22px;margin:auto}
+#product{width:min(960px,100% - 2rem);border-radius:20px;margin:auto}
 .pd{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
-.pd-pic{background:var(--oat-2);display:grid;place-items:center;padding:12%;min-height:100%}
-.pd-pic img{width:100%;max-height:440px;object-fit:contain;mix-blend-mode:multiply}
-.pd-pic .ph{width:62%}
-.pd-pic .ph.box,.pd-pic .ph.collar{width:86%}
-.pd-pic .ph.bake{width:80%}
-.pd-info{padding:clamp(1.5rem,3.5vw,2.5rem);display:grid;gap:1.1rem;align-content:start}
-.pd-info h2{font-size:clamp(1.7rem,3vw,2.3rem);padding-right:2.5rem}
+.pd-pic{position:relative;background:var(--oat-2);min-height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:10% 8% 0}
+.pd-pic .st{position:relative;aspect-ratio:1/1;container-type:inline-size;border-bottom:20px solid var(--wood);box-shadow:0 6px 0 var(--wood-d)}
+.pd-pic .st img{position:absolute;left:50%;bottom:0;height:88%;width:auto;max-width:86%;object-fit:contain;transform:translateX(-50%)}
+.pd-pic .st img.cut{filter:drop-shadow(0 8px 6px rgba(0,0,0,.3))}
+.pd-pic .st img.flat{mix-blend-mode:multiply}
+.pd-pic .ph.bag{width:50%;height:84%}
+.pd-pic .ph.box{width:72%;height:56%}
+.pd-pic .ph.collar{width:50%;height:84%}
+.pd-pic .ph.bake{width:74%}
+.pd-pic .floor{height:clamp(1.5rem,4vw,3rem)}
+.pd-info{padding:clamp(1.5rem,3.5vw,2.5rem);display:grid;gap:1.05rem;align-content:start}
+.pd-info h2{font-size:clamp(1.7rem,3vw,2.3rem);padding-right:2.5rem;color:var(--green-d)}
 .pd-desc{color:var(--ink-2)}
 .pd-tags{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem}
-.pd-tags li{font-size:.85rem;font-weight:600;padding:.2rem .7rem;border-radius:999px;background:var(--oat)}
+.pd-tags li{font-size:.85rem;font-weight:600;padding:.2rem .7rem;border-radius:999px;background:var(--sage);color:var(--green-d)}
 .freq{position:relative;display:grid;gap:.45rem}
-.freq label{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.75rem 1rem;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1.5px rgba(20,36,58,.2);cursor:pointer;font-weight:600;transition:box-shadow .2s,background .2s}
+.freq label{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.75rem 1rem;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1.5px rgba(29,38,32,.2);cursor:pointer;font-weight:600;transition:box-shadow .2s,background .2s}
 .freq label span:last-child{font-variant-numeric:tabular-nums}
 .freq label em{font-style:normal;font-weight:600;font-size:.8rem;color:var(--paper);background:var(--brick);padding:.1rem .45rem;border-radius:999px;margin-left:.4rem}
-.freq input:checked+label{box-shadow:inset 0 0 0 2.5px var(--navy);background:var(--oat)}
+.freq input:checked+label{box-shadow:inset 0 0 0 2.5px var(--green);background:var(--sage)}
 .freq input:focus-visible+label{outline:3px solid var(--brick);outline-offset:2px}
 .pd-buy{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;padding-top:.25rem}
 .pd-buy .btn{flex:1;min-width:12rem}
-.qty{display:inline-flex;align-items:center;border-radius:999px;box-shadow:inset 0 0 0 1.5px rgba(20,36,58,.28);background:#fff}
+.qty{display:inline-flex;align-items:center;border-radius:999px;box-shadow:inset 0 0 0 1.5px rgba(29,38,32,.28);background:#fff}
 .qty button{width:2.6rem;height:2.9rem;font-size:1.2rem;font-weight:600;border-radius:999px}
 .qty button:hover{background:var(--oat)}
 .qty output{min-width:1.75rem;text-align:center;font-weight:650;font-variant-numeric:tabular-nums}
 .qty.sm button{width:2.2rem;height:2.3rem;font-size:1rem}
 .pd-note{font-size:.9rem;color:var(--ink-2)}
 .pd-note:empty{display:none}
-
-/* bag */
-#bag{margin:0 0 0 auto;width:min(460px,100%);height:100dvh;max-height:100dvh;border-radius:22px 0 0 22px;flex-direction:column}
+#bag{margin:0 0 0 auto;width:min(460px,100%);height:100dvh;max-height:100dvh;border-radius:20px 0 0 20px;flex-direction:column}
 #bag[open]{display:flex;animation:slide .32s var(--ease)}
 @keyframes slide{from{transform:translateX(30px);opacity:0}to{transform:none;opacity:1}}
 .b-head{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 1.5rem;border-bottom:1px solid var(--rule)}
-.b-head h2{font-size:1.7rem}
+.b-head h2{font-size:1.7rem;color:var(--green-d)}
 .b-head .x{position:static}
 .meter{padding:1rem 1.5rem;border-bottom:1px solid var(--rule);font-size:.92rem}
 .meter .track{height:.45rem;border-radius:999px;background:var(--oat-2);margin-top:.5rem;overflow:hidden}
-.meter .track i{display:block;height:100%;background:var(--ok);border-radius:999px;transition:width .4s var(--ease)}
+.meter .track i{display:block;height:100%;background:var(--green);border-radius:999px;transition:width .4s var(--ease)}
 .lines{list-style:none;flex:1;overflow:auto;padding:.5rem 1.5rem}
 .bline{display:grid;grid-template-columns:4.5rem minmax(0,1fr) auto;gap:.4rem 1rem;padding:1rem 0;border-bottom:1px solid var(--rule)}
-.bline .im{grid-row:span 2;aspect-ratio:1;border-radius:10px;background:var(--oat-2);display:grid;place-items:center;padding:8%;overflow:hidden}
-.bline .im img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
-
+.thumb{position:relative;aspect-ratio:1;border-radius:10px;background:var(--oat-2);container-type:inline-size;overflow:hidden}
+.thumb img{position:absolute;left:50%;bottom:6%;height:86%;width:auto;max-width:86%;object-fit:contain;transform:translateX(-50%);mix-blend-mode:multiply}
+.thumb .ph{bottom:6%}
+.bline .thumb{grid-row:span 2}
 .bline h3{font-family:var(--sans);font-size:.98rem;font-weight:650;letter-spacing:0;line-height:1.3}
 .bline .meta{display:block;font-size:.85rem;color:var(--ink-2);margin-top:.15rem}
-.bline .meta .auto-tag{display:inline-block;margin-top:.3rem;font-weight:650;color:var(--brick)}
-.bline .price{text-align:right}
+.bline .auto-tag{display:inline-block;margin-top:.3rem;font-weight:650;color:var(--brick)}
+.bline .price{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
 .bline .ctl{grid-column:2/-1;display:flex;justify-content:space-between;align-items:center}
 .rm{font-size:.88rem;color:var(--ink-2);text-decoration:underline;text-underline-offset:.2em}
 .rm:hover{color:var(--brick)}
@@ -405,55 +509,46 @@ dialog[open]{animation:pop .28s var(--ease)}
 .sum.total{font-weight:750;font-size:1.15rem;padding-top:.4rem;border-top:1px solid var(--rule);margin-top:.2rem}
 .b-foot small{color:var(--ink-2);font-size:.85rem}
 .b-foot .btn{margin-top:.5rem}
-
-/* checkout */
-#checkout{width:min(1040px,100% - 2rem);border-radius:22px;margin:auto}
+#checkout{width:min(1040px,100% - 2rem);border-radius:20px;margin:auto}
 .co{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
 .co-main{padding:clamp(1.5rem,3.5vw,2.5rem);display:grid;gap:1.75rem;align-content:start}
-.co-main h2{font-size:2rem;padding-right:3rem}
+.co-main h2{font-size:2rem;padding-right:3rem;color:var(--green-d)}
 .methods{display:grid;gap:.55rem}
-.method{position:relative;display:grid;grid-template-columns:1.4rem 1fr auto;gap:.2rem .8rem;align-items:start;padding:.95rem 1.1rem;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1.5px rgba(20,36,58,.2);cursor:pointer;transition:box-shadow .2s,background .2s}
-.method input{margin-top:.25rem;width:1.1rem;height:1.1rem;accent-color:var(--navy)}
+.method{position:relative;display:grid;grid-template-columns:1.4rem 1fr auto;gap:.2rem .8rem;align-items:start;padding:.95rem 1.1rem;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1.5px rgba(29,38,32,.2);cursor:pointer;transition:box-shadow .2s,background .2s}
+.method input{margin-top:.25rem;width:1.1rem;height:1.1rem;accent-color:var(--green)}
 .method b{font-weight:650}
 .method small{grid-column:2/3;color:var(--ink-2);font-size:.88rem;line-height:1.4}
 .method em{font-style:normal;font-weight:650;font-variant-numeric:tabular-nums}
-.method:has(input:checked){box-shadow:inset 0 0 0 2.5px var(--navy);background:var(--oat)}
+.method:has(input:checked){box-shadow:inset 0 0 0 2.5px var(--green);background:var(--sage)}
 .pay{font-size:.92rem;color:var(--ink-2);padding:1rem 1.1rem;border-radius:12px;background:var(--oat)}
 .co-err{color:var(--err);font-weight:650}
 .co-err:empty{display:none}
 .co-side{background:var(--oat);padding:clamp(1.5rem,3.5vw,2.5rem);display:grid;gap:.5rem;align-content:start}
-.co-side h3{font-size:1.35rem;margin-bottom:.5rem}
+.co-side h3{font-size:1.35rem;margin-bottom:.5rem;color:var(--green-d)}
 .co-lines{list-style:none;display:grid;gap:.75rem;margin-bottom:.75rem}
 .co-lines li{display:grid;grid-template-columns:3.5rem 1fr auto;gap:.75rem;align-items:center;font-size:.92rem}
-.co-lines .im{position:relative;aspect-ratio:1;border-radius:10px;background:var(--oat-2);display:grid;place-items:center;padding:8%}
-.co-lines .im img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
-
-.co-lines .im b{position:absolute;top:-.4rem;right:-.4rem;min-width:1.4rem;height:1.4rem;padding:0 .3rem;border-radius:999px;background:var(--navy);color:var(--paper);font-size:.75rem;display:grid;place-items:center}
+.co-lines .thumb{overflow:visible}
+.co-lines .thumb b{position:absolute;top:-.4rem;right:-.4rem;min-width:1.4rem;height:1.4rem;padding:0 .3rem;border-radius:999px;background:var(--green);color:var(--paper);font-size:.75rem;display:grid;place-items:center;z-index:2}
 .co-lines .meta{display:block;color:var(--ink-2);font-size:.82rem}
 .co-done{padding:clamp(2rem,6vw,4rem);text-align:center;display:grid;gap:1rem;justify-items:center;max-width:40rem;margin:auto}
 .co-done:focus{outline:none}
-.co-done .mark{width:4rem;height:4rem;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center}
+.co-done .mark{width:4rem;height:4rem;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center}
 .co-done .mark svg{width:2rem;height:2rem}
-.co-done h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.co-done h2{font-size:clamp(1.8rem,4vw,2.6rem);color:var(--green-d)}
 .co-done p{color:var(--ink-2)}
-.co-done .auto-sum{width:100%;text-align:left;background:var(--oat);border-radius:14px;padding:1rem 1.2rem;color:var(--navy)}
+.co-done .auto-sum{width:100%;text-align:left;background:var(--sage);border-radius:14px;padding:1rem 1.2rem;color:var(--ink)}
 .co-done .auto-sum:empty{display:none}
 .co-done .auto-sum b{display:block;margin-bottom:.3rem}
 .co-done .auto-sum li{margin-left:1.1rem;font-size:.95rem}
-.co-done .demo{font-size:.9rem;padding:.4rem .9rem;border-radius:999px;background:var(--oat);color:var(--navy);font-weight:600}
-
-/* toast */
-.toast{position:fixed;left:50%;bottom:1.25rem;z-index:80;display:flex;align-items:center;gap:1rem;max-width:calc(100% - 2rem);padding:.7rem .7rem .7rem 1.2rem;border-radius:999px;background:var(--navy);color:var(--paper);box-shadow:0 16px 40px -16px rgba(8,22,34,.6);transform:translate(-50%,160%);visibility:hidden;transition:transform .35s var(--spring),visibility 0s .35s}
+.co-done .demo{font-size:.9rem;padding:.4rem .9rem;border-radius:999px;background:var(--oat);color:var(--ink);font-weight:600}
+.toast{position:fixed;left:50%;bottom:1.25rem;z-index:80;display:flex;align-items:center;gap:1rem;max-width:calc(100% - 2rem);padding:.7rem .7rem .7rem 1.2rem;border-radius:999px;background:var(--green-d);color:var(--paper);box-shadow:0 16px 40px -16px rgba(0,0,0,.6);transform:translate(-50%,160%);visibility:hidden;transition:transform .35s var(--spring),visibility 0s .35s}
 .toast.show{transform:translate(-50%,0);visibility:visible;transition:transform .35s var(--spring)}
-.toast button{flex:none;padding:.45rem .95rem;border-radius:999px;background:var(--oat);color:var(--navy);font-weight:650;font-size:.92rem}
+.toast button{flex:none;padding:.45rem .95rem;border-radius:999px;background:var(--oat);color:var(--green-d);font-weight:650;font-size:.92rem}
 
 /* ---------- responsive ---------- */
 @media(max-width:1080px){
-  .promise ul{grid-template-columns:1fr 1fr}
-  .promise li:nth-child(3){padding-left:0;border-left:0}
-  .promise li:nth-child(n+3){border-top:1px solid var(--rule)}
-  .bakery .grid{grid-template-columns:1fr 1fr}
-  .bar{grid-template-columns:1fr}
+  .months{grid-template-columns:1fr 1fr}
+  .months .month:nth-child(3){display:none}
 }
 @media(max-width:900px){
   .burger{display:inline-flex}
@@ -463,42 +558,55 @@ dialog[open]{animation:pop .28s var(--ease)}
   .nav ul{flex-direction:column;gap:0;width:min(1240px,100% - 2rem);margin-inline:auto;padding:.25rem 0 1rem}
   .nav li+li{border-top:1px solid var(--rule)}
   .nav a{display:block;padding:1rem 0;font-size:1.1rem;border:0}
-  .hero .wrap{grid-template-columns:1fr}
-  .hero-copy{padding:2.75rem 0 2.5rem}
-  .hero-pic{margin:0 -1rem;order:-1}
-  .hero-pic{min-height:0;aspect-ratio:4/3}
-  .hero-pic img{object-position:50% 30%}
-  .auto .wrap,.finder .wrap,.groom .wrap,.family .wrap,.visit .wrap,.site-foot .top{grid-template-columns:1fr}
-  .finder .pic{display:none}
+  .hero .wrap{grid-template-columns:1fr;align-items:center}
+  .hero-copy{padding-bottom:0;order:-1}
+  .window{width:min(100%,420px)}
+  .label-sec .wrap,.standing .wrap,.counter .wrap,.groom .wrap,.family .wrap,.visit .wrap,.site-foot .top{grid-template-columns:1fr}
+  .aisle-top{grid-template-columns:1fr;justify-items:start}
+  .counter .polaroid{display:none}
+  .family .pics{min-height:0}
+  .index-card{position:relative;right:auto;bottom:auto;margin:-.6rem 0 0 auto;display:block}
+  .visit .wrap{align-items:start}
+  .doorway{order:2;width:min(70%,280px)}
   .pd,.co{grid-template-columns:1fr}
-  .pd-pic{min-height:0;padding:8% 18%}
-  .pd-pic img{max-height:280px}
+  .pd-pic{padding:6% 22% 0}
+  .pd-pic .floor{height:1rem}
 }
 @media(max-width:640px){
   body{font-size:1rem}
   .brand small{display:none}
   .brand b{font-size:1.4rem}
   .bag-btn{padding-left:.85rem}
-  .promise ul{grid-template-columns:1fr}
-  .promise li,.promise li+li,.promise li:nth-child(3){padding:1.1rem 0;border-left:0}
-  .promise li+li{border-top:1px solid var(--rule)}
-  .pet{height:4rem;width:100%}
-  .pet label{font-size:1.35rem}
+  .awning{background:repeating-linear-gradient(90deg,var(--brick) 0 40px,var(--oat) 40px 80px)}
+  .awning::after{height:20px;background:radial-gradient(circle at 20px 0,var(--brick) 19px,transparent 20px),radial-gradient(circle at 60px 0,var(--oat) 19px,transparent 20px);background-size:80px 20px}
+  .panel{transform:none;box-shadow:6px 6px 0 var(--green)}
   .frow{flex-wrap:nowrap;overflow-x:auto;margin-inline:-1rem;padding:0 1rem .25rem;scrollbar-width:none}
   .frow::-webkit-scrollbar{display:none}
   .frow>span{flex:none;min-width:auto}
   .chip{flex:none}
-  .grid{grid-template-columns:1fr 1fr;gap:.75rem}
-  .card .info{padding:.8rem .85rem .9rem}
-  .card h3{font-size:.95rem}
+  .shelves{grid-template-columns:1fr 1fr;row-gap:2rem}
+  .talker{padding:1rem .75rem .85rem}
+  .talker h3{font-size:.93rem}
   .buy{flex-direction:column;align-items:stretch;gap:.5rem}
   .qa{justify-content:center}
-  .bakery .grid{grid-template-columns:1fr 1fr}
+  .hprice{font-size:1.7rem}
+  .sticky{width:5rem;font-size:1.05rem;right:4%}
+  .stamp{width:3.8rem;height:3.8rem;font-size:.6rem;left:4%}
+  .months{grid-template-columns:1fr}
+  .months .month:nth-child(2){display:none}
+  .cal{transform:none}
+  .order{grid-template-columns:3.5rem 1fr}
+  .order .btn{grid-column:1/-1}
   .form{grid-template-columns:1fr}
   .services li{grid-template-columns:1fr;gap:.1rem}
-  .vinfo,.svc-list{grid-template-columns:1fr}
-  .pick{grid-template-columns:4rem minmax(0,1fr)}
-  .pick .btn{grid-column:1/-1}
+  .vinfo{grid-template-columns:1fr}
+  .menu li{grid-template-columns:1fr auto;gap:.3rem .75rem}
+  .menu .lead{display:none}
+  .menu .d{grid-row:auto}
+  .menu .chalk-btn{grid-column:1/-1;justify-self:start}
+  .board{border-width:10px}
+  .doodle{display:none}
+  .index-card{width:78%}
   .news .row{flex-direction:column}
   #bag{border-radius:0;max-width:100%}
   #product,#checkout{width:100%;max-width:100%;max-height:100dvh;height:100dvh;border-radius:0}
@@ -518,6 +626,7 @@ dialog[open]{animation:pop .28s var(--ease)}
         <li><a href="#shop">Shop</a></li>
         <li><a href="#finder">Food finder</a></li>
         <li><a href="#grooming">Grooming</a></li>
+        <li><a href="#bakery">Bakery</a></li>
         <li><a href="#visit">Visit</a></li>
       </ul>
     </nav>
@@ -531,101 +640,129 @@ dialog[open]{animation:pop .28s var(--ease)}
 <main id="main">
 
   <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="awning" aria-hidden="true"></div>
     <div class="wrap">
       <div class="hero-copy">
-        <h1 id="hero-h">Healthy food, honest treats, and a groomer your dog will actually like.</h1>
+        <h1 id="hero-h">Healthy food, honest treats, and a groomer your dog will <span class="gold">actually like.</span></h1>
         <p class="lede">A locally owned pet shop on Appleby Line in Burlington. None of the food we carry contains wheat, corn or by-products, and we're happy to read the label with you.</p>
         <div class="actions">
-          <a class="btn brick" href="#dog">Shop dog</a>
-          <a class="btn line on-dark" href="#cat">Shop cat</a>
+          <a class="btn brick" href="#dog">Shop the dog aisle</a>
+          <a class="btn ghost on-dark" href="#cat">Shop the cat aisle</a>
         </div>
-        <p class="where"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>2500 Appleby Line, Unit D11, Burlington. Pickup, curbside and local delivery.</p>
+        <p class="where"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>2500 Appleby Line, Unit D11. Pickup, curbside and local delivery.</p>
       </div>
-      <div class="hero-pic">
-        <img src="images/teddy-bear-dog-1400.webp" srcset="images/teddy-bear-dog-800.webp 800w, images/teddy-bear-dog-1400.webp 1400w" sizes="(min-width: 900px) 46vw, 100vw" width="1400" height="1935" alt="A smiling golden retriever leaning in close to the camera, nose first." fetchpriority="high">
+      <div class="window">
+        <div class="frame">
+          <img src="images/teddy-bear-dog-1400.webp" srcset="images/teddy-bear-dog-800.webp 800w, images/teddy-bear-dog-1400.webp 1400w" sizes="(min-width: 900px) 40vw, 100vw" width="1400" height="1935" alt="A smiling golden retriever pressing its nose up close, as if looking out through the shop window." fetchpriority="high">
+          <svg class="letters" viewBox="0 0 400 130" aria-hidden="true"><defs><path id="arc" d="M40 128 Q200 -18 360 128"/></defs><text font-family="Bricolage Grotesque, Trebuchet MS, sans-serif" font-weight="800" font-size="27" letter-spacing="2.5" fill="#E0B45A" stroke="#0B1A26" stroke-width="6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle"><textPath href="#arc" startOffset="50%">HEALTHY PET FOODS</textPath></text></svg>
+        </div>
+        <div class="display" aria-hidden="true">
+          <span class="pair"><img src="images/products/orijen-original.webp" alt="" width="546" height="722"><img src="images/products/orijen-puppy.webp" alt="" width="546" height="722"></span>
+          <img src="images/products/open-farm-goodgut-beef.webp" alt="" width="479" height="744">
+        </div>
+        <div class="sill" aria-hidden="true"></div>
       </div>
     </div>
   </section>
 
-  <div class="promise">
-    <div class="wrap">
-      <ul>
-        <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M8 24 24 8"/><path d="M16 9v14M12.5 12.5 16 15l3.5-2.5M12.5 17.5 16 20l3.5-2.5"/></svg><span><strong>No wheat, corn or by-products</strong>in any food we carry</span></li>
-        <li><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3l2.2 5.2 2.8-1.6-.9 6.2 3.6-3.3 1 2.6 3.3-.6-1.6 4.4 1.6 1-6 4.6.8 2.2-5.8-.9V28h-2v-5.2l-5.8.9.8-2.2-6-4.6 1.6-1-1.6-4.4 3.3.6 1-2.6 3.6 3.3-.9-6.2 2.8 1.6Z"/></svg><span><strong>Canadian where we can</strong>treats and accessories, sourced locally first</span></li>
-        <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9h15v13H3zM18 13h6l5 5v4h-11z"/><circle cx="9" cy="24" r="2.5" fill="var(--paper)"/><circle cx="23" cy="24" r="2.5" fill="var(--paper)"/></svg><span><strong>Pickup, curbside or delivery</strong>across Burlington and Oakville</span></li>
-        <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="23" r="4"/><circle cx="23" cy="23" r="4"/><path d="M12 20 24 4M20 20 8 4"/></svg><span><strong>Grooming in the shop</strong>bath, full groom or a nail trim</span></li>
-      </ul>
-    </div>
-  </div>
-
-  <section class="sec shop" id="shop" data-pet="dog" aria-labelledby="shop-h">
-    <div class="wrap">
-      <div class="sec-head">
-        <h2 id="shop-h">The shop</h2>
-        <p>A first look at our shelves. Order online and pick up in store, at the curb, or have it delivered.</p>
-      </div>
-      <div class="bar">
-        <fieldset class="pet">
-          <legend>Shopping for</legend>
-          <span class="knob" aria-hidden="true"></span>
-          <input type="radio" name="pet" id="pet-dog" value="dog" checked><label for="pet-dog"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M9 6c-2.2 0-4 2.6-4 6 0 2 .7 3.5 1.8 4.3L6 25a2 2 0 0 0 2 2h3.5l.8-4h7.4l.8 4H24a2 2 0 0 0 2-2l-.8-8.7C26.3 15.5 27 14 27 12c0-3.4-1.8-6-4-6-1.6 0-2.9 1.3-3.6 3.2A9.6 9.6 0 0 0 16 8.6c-1.2 0-2.4.2-3.4.6C11.9 7.3 10.6 6 9 6Zm4 9a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Zm6 0a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Z"/></svg>Dogs</label>
-          <input type="radio" name="pet" id="pet-cat" value="cat"><label for="pet-cat"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M6 4l5.5 5.2A11 11 0 0 1 16 8.3c1.6 0 3.1.3 4.5.9L26 4v11.5c.6 1.3 1 2.7 1 4.2C27 25 22 28 16 28S5 25 5 19.7c0-1.5.4-2.9 1-4.2Zm6.5 12a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Zm7 0a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Z"/></svg>Cats</label>
-        </fieldset>
-        <div class="filters">
-          <div class="frow" id="f-cat" role="group" aria-label="Category"><span aria-hidden="true">Category</span></div>
-          <div class="frow" id="f-need" role="group" aria-label="Good for"><span aria-hidden="true">Good for</span></div>
-        </div>
-      </div>
-      <div class="result-line"><p id="result" aria-live="polite"></p><button class="tlink" type="button" id="clear" hidden>Clear filters</button></div>
-      <ul class="grid" id="grid"></ul>
-    </div>
-  </section>
-
-  <section class="sec auto" id="autoship" aria-labelledby="auto-h">
+  <section class="label-sec" aria-labelledby="label-h">
     <div class="wrap">
       <div>
-        <h2 id="auto-h">Never run out of food again</h2>
-        <p class="lede">Set any food or treat to repeat, and we'll have it ready before the bag runs low.</p>
+        <h2 id="label-h">We read the label before it goes on the shelf</h2>
+        <p class="lede">Every food we carry passes the same test: no wheat, no corn, no by-products. Treats and accessories come from Canada whenever we can find them.</p>
+        <p class="lede">Not sure about the bag you're using now? Bring it in and we'll read it together at the counter.</p>
+      </div>
+      <div class="panel" role="group" aria-labelledby="panel-h">
+        <h3 id="panel-h">What's in this shop</h3>
+        <p class="sub"><span>Guaranteed analysis</span><span>Per visit</span></p>
+        <dl>
+          <dt>Wheat</dt><dd class="zero">0%</dd>
+          <dt>Corn</dt><dd class="zero">0%</dd>
+          <dt>By-products</dt><dd class="zero">0%</dd>
+          <dt>Canadian-sourced treats</dt><dd>As many as possible</dd>
+          <dt>Pickup, curbside, delivery</dt><dd>All three</dd>
+          <dt>Groomer on site</dt><dd>Yes</dd>
+          <dt>Bakery</dt><dd>Made in-store</dd>
+        </dl>
+        <p class="ing"><b>Ingredients:</b> healthy food, honest treats, Canadian brands where we can, and people who will happily read the label with you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="aisle" id="shop" data-pet="dog" aria-labelledby="shop-h">
+    <div class="wrap">
+      <div class="aisle-top">
+        <div class="hang" id="hang" aria-hidden="true" title="Flip the sign">
+          <svg class="str" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path d="M50 2 L3 40 M50 2 L97 40" stroke="#6b5a43" stroke-width="2" fill="none" vector-effect="non-scaling-stroke"/></svg>
+          <div class="card">
+            <div class="face front"><span>this way to the</span><b>Dogs</b></div>
+            <div class="face back"><span>this way to the</span><b>Cats</b></div>
+          </div>
+        </div>
+        <div class="intro">
+          <h2 id="shop-h">The aisles</h2>
+          <p>Dogs on one side, cats on the other. Flip the sign to switch, then order for pickup, curbside or delivery.</p>
+          <fieldset class="pet">
+            <legend>Shopping for</legend>
+            <input type="radio" name="pet" id="pet-dog" value="dog" checked><label for="pet-dog"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M9 6c-2.2 0-4 2.6-4 6 0 2 .7 3.5 1.8 4.3L6 25a2 2 0 0 0 2 2h3.5l.8-4h7.4l.8 4H24a2 2 0 0 0 2-2l-.8-8.7C26.3 15.5 27 14 27 12c0-3.4-1.8-6-4-6-1.6 0-2.9 1.3-3.6 3.2A9.6 9.6 0 0 0 16 8.6c-1.2 0-2.4.2-3.4.6C11.9 7.3 10.6 6 9 6Zm4 9a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Zm6 0a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Z"/></svg>Dogs</label>
+            <input type="radio" name="pet" id="pet-cat" value="cat"><label for="pet-cat"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M6 4l5.5 5.2A11 11 0 0 1 16 8.3c1.6 0 3.1.3 4.5.9L26 4v11.5c.6 1.3 1 2.7 1 4.2C27 25 22 28 16 28S5 25 5 19.7c0-1.5.4-2.9 1-4.2Zm6.5 12a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Zm7 0a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Z"/></svg>Cats</label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="filters">
+        <div class="frow" id="f-cat" role="group" aria-label="Category"><span aria-hidden="true">Shelf</span></div>
+        <div class="frow" id="f-need" role="group" aria-label="Good for"><span aria-hidden="true">Good for</span></div>
+      </div>
+      <div class="result-line"><p id="result" aria-live="polite"></p><button class="tlink" type="button" id="clear" hidden>Clear filters</button></div>
+      <ul class="shelves" id="grid"></ul>
+    </div>
+  </section>
+
+  <section class="standing" id="autoship" aria-labelledby="auto-h">
+    <div class="wrap">
+      <div>
+        <h2 id="auto-h">A standing order, so the bowl is never empty</h2>
+        <p class="lede">Set any food or treat to repeat. We'll have it ready before the bag runs low.</p>
         <ol class="steps">
           <li><div><b>Choose the bag</b><span>Any food or treat in the shop, in any size.</span></div></li>
           <li><div><b>Pick how often</b><span>Every 2, 4 or 6 weeks, and save 5% each time.</span></div></li>
           <li><div><b>Get it your way</b><span>Pick it up, grab it at the curb, or have it delivered. Skip or change it whenever you like.</span></div></li>
         </ol>
       </div>
-      <div class="plan" aria-labelledby="plan-h">
-        <span class="stamp">Save 5%</span>
-        <div class="plan-top">
+      <div class="cal" aria-labelledby="cal-h">
+        <div class="cal-head"><h3 id="cal-h">On the fridge</h3><span>save 5%</span></div>
+        <div class="months" id="months" aria-hidden="true"></div>
+        <div class="order">
           <div class="im"><img src="images/products/orijen-original.webp" alt="" width="546" height="722" loading="lazy"></div>
-          <div>
-            <p>Example auto-ship</p>
-            <h3 id="plan-h">ORIJEN Original, 6 kg</h3>
-            <p class="num" id="plan-price"></p>
-          </div>
+          <div><b>ORIJEN Original, 6 kg</b><small class="num" id="plan-price"></small></div>
+          <button class="btn" type="button" id="plan-try">Set this up</button>
         </div>
-        <ol id="plan-dates" aria-label="Upcoming orders"></ol>
-        <button class="btn on-dark" type="button" id="plan-try">Set this up</button>
+        <ol class="dates num" id="plan-dates" aria-label="Example order dates"></ol>
       </div>
     </div>
   </section>
 
-  <section class="sec finder" id="finder" aria-labelledby="finder-h">
+  <section class="counter" id="finder" aria-labelledby="finder-h">
     <div class="wrap">
-      <div class="pic"><img src="images/dog-awaiting-treat-1200.webp" srcset="images/dog-awaiting-treat-700.webp 700w, images/dog-awaiting-treat-1200.webp 1200w" sizes="(min-width: 900px) 36vw, 1px" width="1200" height="1525" loading="lazy" alt="A Bernese mountain dog sitting against a black background, looking up hopefully."></div>
       <div>
-        <h2 id="finder-h">Not sure which food?</h2>
-        <p class="lede">Three quick questions and we'll suggest a few bags to start with. It's the same first conversation we'd have at the counter.</p>
+        <h2 id="finder-h">Not sure which food? Pull up to the counter.</h2>
+        <p class="lede">Three quick questions and we'll print you a short list to start with. It's the same first conversation we'd have in the shop.</p>
+        <figure class="polaroid"><img src="images/dog-awaiting-treat-1200.webp" srcset="images/dog-awaiting-treat-700.webp 700w, images/dog-awaiting-treat-1200.webp 1200w" sizes="(min-width: 900px) 360px, 1px" width="1200" height="1525" loading="lazy" alt="A Bernese mountain dog sitting against a black background, looking up hopefully."><figcaption>waiting very patiently</figcaption></figure>
+      </div>
+      <div>
         <div class="quiz" id="quiz">
           <div class="q-top"><span id="q-step"></span><span class="prog" id="q-prog" aria-hidden="true"><i></i><i></i><i></i></span></div>
           <div id="q-body"></div>
         </div>
       </div>
     </div>
+    <div class="counter-top" aria-hidden="true"></div>
   </section>
 
-  <section class="sec groom" id="grooming" aria-labelledby="groom-h">
+  <section class="groom" id="grooming" aria-labelledby="groom-h">
     <div class="wrap">
       <div>
-        <h2 id="groom-h">Grooming, right here in the shop</h2>
+        <h2 id="groom-h">The grooming room is just past the treats</h2>
         <p class="lede">Our groomer works on-site at Appleby Line. Tell us a little about your dog and when suits you, and we'll call to book a time.</p>
         <ul class="services">
           <li><b>Bath and brush</b><span>A wash, a dry and a proper brush-out.</span></li>
@@ -634,61 +771,79 @@ dialog[open]{animation:pop .28s var(--ease)}
         </ul>
         <div class="photo"><img src="images/black-dog-doorway-1400.webp" srcset="images/black-dog-doorway-800.webp 800w, images/black-dog-doorway-1400.webp 1400w" sizes="(min-width: 900px) 46vw, 100vw" width="1400" height="930" loading="lazy" alt="A black dog with floppy ears grinning in a sunny back doorway."></div>
       </div>
-      <!-- PLACEHOLDER: this form does not send anywhere yet. Post it to the shop's email or booking tool before launch. -->
-      <form class="card-form" id="groom-form" novalidate aria-labelledby="gf-h">
-        <h3 id="gf-h">Request a grooming appointment</h3>
-        <p>We'll call you to confirm the time and price.</p>
-        <div class="form">
-          <div class="f"><label for="g-name">Your name</label><input id="g-name" autocomplete="name" aria-describedby="g-name-err"><span class="err" id="g-name-err" aria-live="polite"></span></div>
-          <div class="f"><label for="g-phone">Phone</label><input id="g-phone" type="tel" autocomplete="tel" aria-describedby="g-phone-err"><span class="err" id="g-phone-err" aria-live="polite"></span></div>
-          <div class="f"><label for="g-pet">Dog's name</label><input id="g-pet" aria-describedby="g-pet-err"><span class="err" id="g-pet-err" aria-live="polite"></span></div>
-          <div class="f"><label for="g-breed">Breed or size</label><input id="g-breed" placeholder="Doodle, about 25 kg" aria-describedby="g-breed-err"><span class="err" id="g-breed-err" aria-live="polite"></span></div>
-          <fieldset class="f full">
-            <legend class="lbl" style="font-family:var(--sans);font-size:.9rem;font-weight:650;margin-bottom:.3rem;letter-spacing:0">Service</legend>
-            <div class="seg">
-              <input type="radio" name="g-svc" id="g-s1" value="Bath and brush" checked><label for="g-s1">Bath and brush</label>
-              <input type="radio" name="g-svc" id="g-s2" value="Full groom"><label for="g-s2">Full groom</label>
-              <input type="radio" name="g-svc" id="g-s3" value="Nail trim"><label for="g-s3">Nail trim</label>
-            </div>
-          </fieldset>
-          <div class="f full"><label for="g-day">Preferred day</label>
-            <select id="g-day"><option>Any day</option><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option></select></div>
-          <div class="f full"><label for="g-notes">Anything we should know? <em>(optional)</em></label><textarea id="g-notes" placeholder="Nervous with clippers, first groom, matting behind the ears..."></textarea></div>
-        </div>
-        <button class="btn brick" type="submit" style="width:100%;margin-top:1.25rem">Request appointment</button>
-        <p class="ok-msg" id="g-ok" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-
-  <section class="sec bakery" id="bakery" aria-labelledby="bakery-h">
-    <div class="wrap">
-      <div class="sec-head">
-        <h2 id="bakery-h">Fresh from our bakery</h2>
-        <p>Baked in the shop with ingredients you can pronounce. Pickup or curbside only, so they're fresh when they go home.</p>
+      <div class="appt">
+        <div class="appt-head"><h3 id="gf-h">Grooming appointment</h3><p>we'll call you back</p></div>
+        <!-- PLACEHOLDER: this form does not send anywhere yet. Post it to the shop's email or booking tool before launch. -->
+        <form id="groom-form" novalidate aria-labelledby="gf-h">
+          <div class="form">
+            <div class="f"><label for="g-name">Your name</label><input id="g-name" autocomplete="name" aria-describedby="g-name-err"><span class="err" id="g-name-err" aria-live="polite"></span></div>
+            <div class="f"><label for="g-phone">Phone</label><input id="g-phone" type="tel" autocomplete="tel" aria-describedby="g-phone-err"><span class="err" id="g-phone-err" aria-live="polite"></span></div>
+            <div class="f"><label for="g-pet">Dog's name</label><input id="g-pet" aria-describedby="g-pet-err"><span class="err" id="g-pet-err" aria-live="polite"></span></div>
+            <div class="f"><label for="g-breed">Breed or size</label><input id="g-breed" placeholder="Doodle, about 25 kg" aria-describedby="g-breed-err"><span class="err" id="g-breed-err" aria-live="polite"></span></div>
+            <fieldset class="f full">
+              <legend class="lbl">Service</legend>
+              <div class="seg">
+                <input type="radio" name="g-svc" id="g-s1" value="Bath and brush" checked><label for="g-s1">Bath and brush</label>
+                <input type="radio" name="g-svc" id="g-s2" value="Full groom"><label for="g-s2">Full groom</label>
+                <input type="radio" name="g-svc" id="g-s3" value="Nail trim"><label for="g-s3">Nail trim</label>
+              </div>
+            </fieldset>
+            <div class="f full"><label for="g-day">Preferred day</label>
+              <select id="g-day"><option>Any day</option><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option></select></div>
+            <div class="f full"><label for="g-notes">Anything we should know? <em>(optional)</em></label><textarea id="g-notes" placeholder="Nervous with clippers, first groom, matting behind the ears..."></textarea></div>
+          </div>
+          <button class="btn brick" type="submit" style="width:100%;margin-top:1.25rem">Request appointment</button>
+          <p class="ok-msg" id="g-ok" role="status" aria-live="polite"></p>
+        </form>
+        <div class="stub"><span>Otis &amp; Allen grooming</span><b class="num">905-335-7036</b></div>
       </div>
-      <ul class="grid" id="bake-grid"></ul>
     </div>
   </section>
 
-  <section class="sec family" aria-labelledby="family-h">
+  <section class="bakery" id="bakery" aria-labelledby="bakery-h">
     <div class="wrap">
-      <div class="photo"><img src="images/working-from-home-1400.webp" srcset="images/working-from-home-800.webp 800w, images/working-from-home-1400.webp 1400w" sizes="(min-width: 900px) 52vw, 100vw" width="1400" height="933" loading="lazy" alt="A fawn pug curled up asleep on a rumpled bed, next to someone working on a laptop."></div>
-      <div>
-        <h2 id="family-h">Pets are part of the family</h2>
-        <p class="lede">Our pets sleep in our beds these days. Treat them with the best care and nutrition possible.</p>
-        <blockquote class="review">
+      <div class="board">
+        <svg class="doodle a" viewBox="0 0 100 50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M22 18c-6-10-20-4-15 5-6 4-4 15 5 13 4 0 6-3 8-5h60c2 2 4 5 8 5 9 2 11-9 5-13 5-9-9-15-15-5H22Z"/></svg>
+        <svg class="doodle b" viewBox="0 0 60 60" fill="currentColor" aria-hidden="true"><ellipse cx="30" cy="40" rx="14" ry="12"/><ellipse cx="12" cy="24" rx="6" ry="8"/><ellipse cx="23" cy="13" rx="6" ry="8"/><ellipse cx="37" cy="13" rx="6" ry="8"/><ellipse cx="48" cy="24" rx="6" ry="8"/></svg>
+        <h2 id="bakery-h">Fresh from our bakery</h2>
+        <p class="sub">baked in the shop, gone by the weekend</p>
+        <ul class="menu" id="menu"></ul>
+        <p class="foot">Pickup or curbside only, so they're fresh when they go home.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="family" aria-labelledby="family-h">
+    <div class="wrap">
+      <div class="pics">
+        <figure class="polaroid"><img src="images/working-from-home-1400.webp" srcset="images/working-from-home-800.webp 800w, images/working-from-home-1400.webp 1400w" sizes="(min-width: 900px) 40vw, 86vw" width="1400" height="933" loading="lazy" alt="A fawn pug curled up asleep on a rumpled bed, next to someone working on a laptop."><figcaption>working from home, supervised</figcaption></figure>
+        <blockquote class="index-card">
           <p>“Friendly service and very professional. Have always been very helpful and informative. Great selection of pet foods and needs.”</p>
           <footer>From a customer review on Yellow Pages</footer>
         </blockquote>
       </div>
+      <div>
+        <h2 id="family-h">Pets are part of the family</h2>
+        <p class="lede">Our pets sleep in our beds these days. Treat them with the best care and nutrition possible.</p>
+      </div>
     </div>
   </section>
 
-  <section class="sec visit" id="visit" aria-labelledby="visit-h">
+  <section class="visit" id="visit" aria-labelledby="visit-h">
     <div class="wrap">
-      <div>
-        <h2 id="visit-h">Come say hi</h2>
+      <div class="doorway" aria-hidden="true">
+        <div class="door">
+          <span class="plate">D11</span>
+          <div class="glass"><span class="gl">Otis &amp; Allen<small>HEALTHY PET FOODS</small></span></div>
+          <div class="panelx"></div>
+          <div class="sign"><svg class="str" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path d="M50 2 L3 40 M50 2 L97 40" stroke="#6b5a43" stroke-width="2" fill="none" vector-effect="non-scaling-stroke"/></svg><span>Come on in, we're open 7 days</span></div>
+          <span class="handle"></span>
+          <span class="kick"></span>
+        </div>
+        <div class="step"></div>
+      </div>
+      <div class="visit-info">
+        <h2 id="visit-h">Find the green door</h2>
         <div class="vinfo">
           <div><h3>Address</h3><address>2500 Appleby Line, Unit D11<br>Burlington, ON L7L 0A2</address></div>
           <div><h3>Hours</h3>
@@ -697,20 +852,18 @@ dialog[open]{animation:pop .28s var(--ease)}
           <div><h3>Phone</h3><p><a class="num" href="tel:+19053357036">905-335-7036</a></p></div>
           <div><h3>Email</h3><p><a href="mailto:otisandallen@gmail.com">otisandallen@gmail.com</a></p></div>
         </div>
-        <div class="actions">
-          <a class="btn on-dark" href="https://maps.google.com/?q=2500+Appleby+Line+Unit+D11+Burlington+ON" target="_blank" rel="noopener">Get directions</a>
-          <a class="btn line on-dark" href="tel:+19053357036">Call the shop</a>
-        </div>
-      </div>
-      <div>
         <ul class="svc-list" aria-label="What we offer">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 9h16l-1.5 11h-13zM8 9V7a4 4 0 0 1 8 0v2"/></svg>In-store shopping</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 10h18v10H3zM3 10l2-5h14l2 5M10 14h4"/></svg>In-store pickup</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 16V11l2-5h10l2 5v5M3 16h18v3H3zM7 19v2M17 19v2M5 11h14"/></svg>Curbside pickup</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 7h12v10H2zM14 10h5l3 3v4h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>Local delivery</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><path d="M9 15 18 3M15 15 6 3"/></svg>Grooming</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 11h14v9H5zM4 11c0-4 3.5-6 8-6s8 2 8 6M12 5V3"/></svg>Bakery</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9h16l-1.5 11h-13zM8 9V7a4 4 0 0 1 8 0v2"/></svg>Shop in store</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 10h18v10H3zM3 10l2-5h14l2 5"/></svg>In-store pickup</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 16V11l2-5h10l2 5v5M3 16h18v3H3zM5 11h14"/></svg>Curbside</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 7h12v10H2zM14 10h5l3 3v4h-8z"/></svg>Local delivery</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><path d="M9 15 18 3M15 15 6 3"/></svg>Grooming</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11h14v9H5zM4 11c0-4 3.5-6 8-6s8 2 8 6"/></svg>Bakery</li>
         </ul>
+        <div class="actions">
+          <a class="btn" href="https://maps.google.com/?q=2500+Appleby+Line+Unit+D11+Burlington+ON" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn ghost" href="tel:+19053357036">Call the shop</a>
+        </div>
         <p class="note">Bring in the bag your pet eats now and we'll compare labels with you. No appointment needed.</p>
       </div>
     </div>
@@ -745,13 +898,13 @@ dialog[open]{animation:pop .28s var(--ease)}
 <dialog id="product" aria-labelledby="pd-name">
   <button class="x" type="button" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   <div class="pd">
-    <div class="pd-pic" id="pd-pic"></div>
+    <div class="pd-pic"><div class="st" id="pd-pic"></div><div class="floor"></div></div>
     <div class="pd-info">
       <div><p class="brandname" id="pd-brand"></p><h2 id="pd-name"></h2></div>
       <p class="pd-desc" id="pd-desc"></p>
       <ul class="pd-tags" id="pd-tags" aria-label="Good for"></ul>
-      <fieldset id="pd-size-wrap"><legend class="lbl" style="font-family:var(--sans);font-size:.9rem;font-weight:650;letter-spacing:0;margin-bottom:.45rem">Size</legend><div class="seg" id="pd-sizes"></div></fieldset>
-      <fieldset id="pd-freq-wrap"><legend class="lbl" style="font-family:var(--sans);font-size:.9rem;font-weight:650;letter-spacing:0;margin-bottom:.45rem">How often?</legend><div class="freq" id="pd-freq"></div></fieldset>
+      <fieldset id="pd-size-wrap"><legend class="lbl">Size</legend><div class="seg" id="pd-sizes"></div></fieldset>
+      <fieldset id="pd-freq-wrap"><legend class="lbl">How often?</legend><div class="freq" id="pd-freq"></div></fieldset>
       <div class="pd-buy">
         <div class="qty" role="group" aria-label="Quantity"><button type="button" id="pd-minus" aria-label="Decrease quantity">&minus;</button><output id="pd-qty">1</output><button type="button" id="pd-plus" aria-label="Increase quantity">+</button></div>
         <button class="btn brick" type="button" id="pd-add">Add to bag</button>
@@ -847,6 +1000,7 @@ dialog[open]{animation:pop .28s var(--ease)}
   var money=function(n){return '$'+n.toFixed(2)};
   var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
   var r2=function(n){return Math.round(n*100)/100};
+  var reduced=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- store rules (PLACEHOLDERS until the shop confirms) ---------- */
   var AUTO_OFF=.05,FREE_DEL=75,DEL_FEE=6.99,HST=.13;
@@ -857,33 +1011,34 @@ dialog[open]{animation:pop .28s var(--ease)}
      Brands and product lines are real and verified on the brands' own sites (October 2026).
      PRICES ARE PLACEHOLDERS: realistic Canadian retail, not Otis & Allen's own pricing.
      Bakery items are invented examples of what the in-store bakery could list.
-     ph = typographic placeholder when no packshot was available: shape, bag colour, text colour. */
+     img = [w,h] of the packshot; cut = transparent cut-out (gets a drop shadow), otherwise a white-backed photo.
+     ph = drawn placeholder when no packshot was available: shape, colour, text colour. */
   var P=[
-    {id:'orijen-original',brand:'ORIJEN',name:'Original Dog Food',cat:'food',pet:'dog',img:[546,722],sizes:[['2 kg',38.99],['6 kg',89.99],['11.4 kg',139.99]],tags:['grainfree','canadian'],ca:'Canadian brand',desc:'Grain-free kibble made with free-run chicken and turkey, wild-caught fish and cage-free eggs.'},
-    {id:'orijen-puppy',brand:'ORIJEN',name:'Puppy Food',cat:'food',pet:'dog',img:[546,722],sizes:[['2 kg',41.99],['6 kg',94.99],['11.4 kg',144.99]],tags:['young','grainfree','canadian'],ca:'Canadian brand',desc:'The same grain-free, meat-first recipe as Original, balanced for growing puppies.'},
-    {id:'acana-red-meat',brand:'ACANA',name:'Red Meat Recipe',cat:'food',pet:'dog',img:[577,702],sizes:[['2 kg',32.99],['6 kg',74.99],['11.4 kg',114.99]],tags:['canadian'],ca:'Canadian brand',desc:'A red meat kibble for adult dogs from ACANA, the sister brand to ORIJEN.'},
-    {id:'acana-singles-lamb-apple',brand:'ACANA',name:'Singles Lamb with Apple',cat:'food',pet:'dog',img:[577,702],sizes:[['2 kg',31.99],['6 kg',72.99],['10.8 kg',109.99]],tags:['limited','sensitive','grainfree','canadian'],ca:'Canadian brand',desc:'A limited-ingredient recipe with one animal protein. Often the first bag we suggest for dogs with food sensitivities.'},
+    {id:'orijen-original',brand:'ORIJEN',name:'Original Dog Food',cat:'food',pet:'dog',img:[546,722],cut:1,sizes:[['2 kg',38.99],['6 kg',89.99],['11.4 kg',139.99]],tags:['grainfree','canadian'],ca:'Canadian brand',desc:'Grain-free kibble made with free-run chicken and turkey, wild-caught fish and cage-free eggs.'},
+    {id:'orijen-puppy',brand:'ORIJEN',name:'Puppy Food',cat:'food',pet:'dog',img:[546,722],cut:1,sizes:[['2 kg',41.99],['6 kg',94.99],['11.4 kg',144.99]],tags:['young','grainfree','canadian'],ca:'Canadian brand',desc:'The same grain-free, meat-first recipe as Original, balanced for growing puppies.'},
+    {id:'acana-red-meat',brand:'ACANA',name:'Red Meat Recipe',cat:'food',pet:'dog',img:[577,702],cut:1,sizes:[['2 kg',32.99],['6 kg',74.99],['11.4 kg',114.99]],tags:['canadian'],ca:'Canadian brand',desc:'A red meat kibble for adult dogs from ACANA, the sister brand to ORIJEN.'},
+    {id:'acana-singles-lamb-apple',brand:'ACANA',name:'Singles Lamb with Apple',cat:'food',pet:'dog',img:[577,702],cut:1,sizes:[['2 kg',31.99],['6 kg',72.99],['10.8 kg',109.99]],tags:['limited','sensitive','grainfree','canadian'],ca:'Canadian brand',desc:'A limited-ingredient recipe with one animal protein. Often the first bag we suggest for dogs with food sensitivities.'},
     {id:'fromm-duck-a-la-veg',brand:'FROMM',name:'Four-Star Duck à la Veg',cat:'food',pet:'dog',img:[550,550],sizes:[['1.8 kg',27.99],['5.4 kg',64.99],['10.9 kg',104.99]],tags:['adult'],desc:'Duck with sweet potato and vegetables, from the family-owned Fromm’s Four-Star line.'},
     {id:'fromm-gold-puppy',brand:'FROMM',name:'Gold Puppy',cat:'food',pet:'dog',img:[550,550],sizes:[['1.8 kg',26.99],['5.4 kg',62.99],['10.9 kg',99.99]],tags:['young'],desc:'Fromm’s Gold recipe for puppies. A gentle, well-rounded first food.'},
     {id:'fromm-gold-senior',brand:'FROMM',name:'Gold Reduced Activity & Senior',cat:'food',pet:'dog',img:[550,550],sizes:[['1.8 kg',26.99],['5.4 kg',62.99],['10.9 kg',99.99]],tags:['senior','weight'],desc:'For older or less active dogs who need fewer calories.'},
     {id:'fromm-gold-weight',brand:'FROMM',name:'Gold Weight Management',cat:'food',pet:'dog',img:[550,550],sizes:[['1.8 kg',26.99],['5.4 kg',62.99],['10.9 kg',99.99]],tags:['weight'],desc:'A lighter Gold recipe for adult dogs who need to slim down a little.'},
-    {id:'open-farm-goodgut-beef',brand:'OPEN FARM',name:'GoodGut Grass-Fed Beef',cat:'food',pet:'dog',img:[479,744],sizes:[['1.8 kg',36.99],['5.4 kg',84.99]],tags:['sensitive','canadian'],ca:'Canadian brand',desc:'Grass-fed beef kibble from Open Farm’s GoodGut line, made with digestion in mind.'},
+    {id:'open-farm-goodgut-beef',brand:'OPEN FARM',name:'GoodGut Grass-Fed Beef',cat:'food',pet:'dog',img:[479,744],cut:1,sizes:[['1.8 kg',36.99],['5.4 kg',84.99]],tags:['sensitive','canadian'],ca:'Canadian brand',desc:'Grass-fed beef kibble from Open Farm’s GoodGut line, made with digestion in mind.'},
     {id:'go-carnivore',brand:'go! SOLUTIONS',name:'Carnivore Chicken, Turkey + Duck',cat:'food',pet:'dog',ph:['bag','#33251C','#F7A33B'],sizes:[['1.6 kg',34.99],['5.4 kg',79.99],['10 kg',114.99]],tags:['grainfree','canadian'],ca:'Canadian brand',desc:'A grain-free, protein-rich kibble from Petcurean in British Columbia.'},
     {id:'go-sensitivities-salmon',brand:'go! SOLUTIONS',name:'Sensitivities Limited Ingredient Salmon',cat:'food',pet:'dog',ph:['bag','#0F6E73','#FFFFFF'],sizes:[['1.6 kg',33.99],['5.4 kg',76.99],['10 kg',109.99]],tags:['limited','sensitive','canadian'],ca:'Canadian brand',desc:'One animal protein and a short ingredient list, from Petcurean’s Sensitivities line.'},
     {id:'grand-cru-red-meat',brand:'GRAND CRU',name:'Dehydrated Red Meat Formula',cat:'food',pet:'dog',ph:['bag','#5B1A24','#F1D9A7'],sizes:[['2 kg',54.99],['5 kg',119.99]],tags:['picky','canadian'],ca:'Made in Canada',desc:'Slow-dehydrated raw food from CaniSource. Served rehydrated with warm water.'},
     {id:'fromm-frommbalaya-chicken',brand:'FROMM',name:'Frommbalaya Chicken, Vegetable & Rice Stew',cat:'food',pet:'dog',img:[550,550],sizes:[['1 can',4.99],['Case of 12',54.99]],tags:['picky'],desc:'A chunky stew to serve on its own or spoon over kibble.'},
     {id:'fromm-crunchy-os-pb',brand:'FROMM',name:'Crunchy Os, Peanut Butter Jammers',cat:'treats',pet:'dog',img:[550,550],price:9.99,tags:['training'],desc:'Crunchy, peanut-buttery biscuits that snap into small pieces for training.'},
-    {id:'open-farm-cod-skins',brand:'OPEN FARM',name:'Icelandic Cod Skin Sticks',cat:'treats',pet:'dog',img:[502,614],price:22.99,soldOut:true,tags:['limited','canadian'],ca:'Canadian brand',desc:'Air-dried cod skin, and that’s the whole ingredient list.'},
-    {id:'outward-hound-hide-n-slide',brand:'OUTWARD HOUND',name:'Hide N’ Slide Puzzle',cat:'toys',pet:'dog',ph:['box','#F2A23A','#14243A'],price:43.99,tags:['puzzle'],desc:'A Nina Ottosson treat puzzle with flippers and sliding blocks. Level 2, for dogs who have solved an easy one.'},
+    {id:'open-farm-cod-skins',brand:'OPEN FARM',name:'Icelandic Cod Skin Sticks',cat:'treats',pet:'dog',img:[502,614],cut:1,price:22.99,soldOut:true,tags:['limited','canadian'],ca:'Canadian brand',desc:'Air-dried cod skin, and that’s the whole ingredient list.'},
+    {id:'outward-hound-hide-n-slide',brand:'OUTWARD HOUND',name:'Hide N’ Slide Puzzle',cat:'toys',pet:'dog',ph:['box','#F2A23A','#1D2620'],price:43.99,tags:['puzzle'],desc:'A Nina Ottosson treat puzzle with flippers and sliding blocks. Level 2, for dogs who have solved an easy one.'},
     {id:'bowsers-donut-bed',brand:'BOWSERS',name:'Donut Bed',cat:'beds',pet:'dog',img:[800,640],sizes:[['Small',89.99],['Medium',109.99],['Large',134.99],['X-Large',159.99]],tags:['canadian'],ca:'Made in Canada',desc:'A round bolster bed with a removable cushion and a zip-off, washable cover. Lots of fabrics in store.'},
-    {id:'hot-dogs-leather-collar',brand:'HOT DOGS',name:'Leather Collar',cat:'walk',pet:'dog',ph:['collar','#6B3E22','#F3E3CC'],sizes:[['Small',39.99],['Medium',44.99],['Large',49.99]],tags:['leather'],desc:'A soft leather collar that gets better with every walk.'},
-    {id:'preston-ribbon-collar',brand:'PRESTON',name:'Ribbon Collar',cat:'walk',pet:'dog',ph:['collar','#2B4A75','#F7E6B5'],sizes:[['Small',24.99],['Medium',26.99],['Large',28.99]],soldOut:true,tags:['ribbon'],desc:'A patterned ribbon collar on a sturdy nylon base.'},
+    {id:'hot-dogs-leather-collar',brand:'HOT DOGS',name:'Leather Collar',cat:'walk',pet:'dog',ph:['collar','#6B3E22'],sizes:[['Small',39.99],['Medium',44.99],['Large',49.99]],tags:['leather'],desc:'A soft leather collar that gets better with every walk.'},
+    {id:'preston-ribbon-collar',brand:'PRESTON',name:'Ribbon Collar',cat:'walk',pet:'dog',ph:['collar','#2F5D43'],sizes:[['Small',24.99],['Medium',26.99],['Large',28.99]],soldOut:true,tags:['ribbon'],desc:'A patterned ribbon collar on a sturdy nylon base.'},
 
-    {id:'orijen-original-cat',brand:'ORIJEN',name:'Original Cat Food',cat:'food',pet:'cat',img:[557,751],sizes:[['1.8 kg',42.99],['5.4 kg',99.99]],tags:['grainfree','canadian'],ca:'Canadian brand',desc:'Grain-free, meat-first kibble for adult cats.'},
-    {id:'orijen-kitten',brand:'ORIJEN',name:'Kitten Food',cat:'food',pet:'cat',img:[612,716],sizes:[['340 g',15.99],['1.8 kg',44.99]],tags:['young','grainfree','canadian'],ca:'Canadian brand',desc:'ORIJEN’s grain-free recipe sized and balanced for kittens.'},
-    {id:'acana-indoor-entree',brand:'ACANA',name:'Indoor Entrée',cat:'food',pet:'cat',img:[660,718],sizes:[['1.8 kg',34.99],['4.5 kg',72.99]],tags:['weight','senior','canadian'],ca:'Canadian brand',desc:'Made for indoor cats who move a little less than they used to.'},
+    {id:'orijen-original-cat',brand:'ORIJEN',name:'Original Cat Food',cat:'food',pet:'cat',img:[557,751],cut:1,sizes:[['1.8 kg',42.99],['5.4 kg',99.99]],tags:['grainfree','canadian'],ca:'Canadian brand',desc:'Grain-free, meat-first kibble for adult cats.'},
+    {id:'orijen-kitten',brand:'ORIJEN',name:'Kitten Food',cat:'food',pet:'cat',img:[612,716],cut:1,sizes:[['340 g',15.99],['1.8 kg',44.99]],tags:['young','grainfree','canadian'],ca:'Canadian brand',desc:'ORIJEN’s grain-free recipe sized and balanced for kittens.'},
+    {id:'acana-indoor-entree',brand:'ACANA',name:'Indoor Entrée',cat:'food',pet:'cat',img:[660,718],cut:1,sizes:[['1.8 kg',34.99],['4.5 kg',72.99]],tags:['weight','senior','canadian'],ca:'Canadian brand',desc:'Made for indoor cats who move a little less than they used to.'},
     {id:'fromm-cat-au-frommage',brand:'FROMM',name:'Four-Star Chicken au Frommage',cat:'food',pet:'cat',img:[550,550],sizes:[['1.1 kg',22.99],['2.3 kg',39.99],['4.5 kg',69.99]],tags:['picky'],desc:'Chicken with cheese, from Fromm’s Four-Star cat line. A favourite with fussy cats.'},
-    {id:'orijen-six-fish-cat-treats',brand:'ORIJEN',name:'Freeze-Dried Six Fish Cat Treats',cat:'treats',pet:'cat',img:[725,625],price:12.99,size:'35 g',tags:['picky','grainfree','canadian'],ca:'Canadian brand',desc:'Freeze-dried fish. Crumble a few over dinner for cats who need convincing.'},
+    {id:'orijen-six-fish-cat-treats',brand:'ORIJEN',name:'Freeze-Dried Six Fish Cat Treats',cat:'treats',pet:'cat',img:[725,625],cut:1,price:12.99,size:'35 g',tags:['picky','grainfree','canadian'],ca:'Canadian brand',desc:'Freeze-dried fish. Crumble a few over dinner for cats who need convincing.'},
 
     {id:'bakery-pupcake',brand:'OUR BAKERY',name:'Pupcake',cat:'bakery',pet:'dog',ph:['bake'],sizes:[['Single',4.5],['Box of 4',16]],pickupOnly:true,tags:['madein'],desc:'Peanut butter and carrot cupcake with a swirl of yogurt on top.'},
     {id:'bakery-birthday-cake',brand:'OUR BAKERY',name:'Birthday Cake',cat:'bakery',pet:'dog',ph:['bake'],price:18.99,pickupOnly:true,tags:['madein'],desc:'A small peanut butter and banana cake for a big day.'},
@@ -906,11 +1061,12 @@ dialog[open]{animation:pop .28s var(--ease)}
   var phHTML=function(p,lg){
     var s=p.ph[0];
     if(s==='bake')return '<span class="ph bake'+(lg?' lg':'')+'"><span>Made in-store</span><b>'+esc(p.name)+'</b></span>';
+    if(s==='collar')return '<span class="ph collar'+(lg?' lg':'')+'" style="--c:'+p.ph[1]+'"><span>'+esc(p.brand)+'</span><b>'+esc(p.name)+'</b></span>';
     return '<span class="ph '+s+(lg?' lg':'')+'" style="--c:'+p.ph[1]+';--k:'+p.ph[2]+'"><span>'+esc(p.brand)+'</span><b>'+esc(p.name)+'</b></span>';
   };
-  var pic=function(p,lazy,lg){
+  var pic=function(p,lazy,lg,alt){
     if(p.ph)return phHTML(p,lg);
-    return '<img src="images/products/'+p.id+'.webp" alt="" width="'+p.img[0]+'" height="'+p.img[1]+'"'+(lazy?' loading="lazy" decoding="async"':'')+'>';
+    return '<img class="'+(p.cut?'cut':'flat')+'" src="images/products/'+p.id+'.webp" alt="'+(alt?esc(p.brand+' '+p.name+' package'):'')+'" width="'+p.img[0]+'" height="'+p.img[1]+'"'+(lazy?' loading="lazy" decoding="async"':'')+'>';
   };
 
   /* ---------- bag state ---------- */
@@ -921,6 +1077,7 @@ dialog[open]{animation:pop .28s var(--ease)}
   var base=function(l){var s=byId[l.id].sizes.filter(function(s){return s[0]===l.size})[0];return s?s[1]:byId[l.id].low};
   var unit=function(l){return l.freq?r2(base(l)*(1-AUTO_OFF)):base(l)};
   var freqText=function(f){return f?'Every '+f+' weeks':'One time'};
+  var fullName=function(p){return p.brand==='OUR BAKERY'?p.name:p.brand+' '+p.name};
   var totals=function(){
     var sub=0,saved=0,count=0;
     bag.forEach(function(l){sub+=base(l)*l.qty;saved+=(base(l)-unit(l))*l.qty;count+=l.qty});
@@ -955,7 +1112,7 @@ dialog[open]{animation:pop .28s var(--ease)}
   nav.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false)});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('open')){setMenu(false);burger.focus()}});
 
-  /* ---------- shop: pet, category, need, hash ---------- */
+  /* ---------- the aisles: pet, shelf, need, hash ---------- */
   var shop=$('#shop'),state={pet:'dog',cat:'all',need:''};
   var match=function(p,s){return p.pet===s.pet&&(s.cat==='all'||p.cat===s.cat)&&(!s.need||p.tags.indexOf(s.need)>-1)};
   var count=function(s){return P.filter(function(p){return match(p,s)}).length};
@@ -968,21 +1125,22 @@ dialog[open]{animation:pop .28s var(--ease)}
     state.need=NEEDS.some(function(n){return n[0]===h[2]})?h[2]:'';
     return true;
   };
-  var cardHTML=function(p){
+  var plus='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>';
+  var itemHTML=function(p){
     var tag=p.tags.length?'<span class="tag">'+esc(tagLabel(p,p.tags[0]))+'</span>':'';
-    var badge=p.soldOut?'<span class="badge out">Sold out</span>':p.pickupOnly?'<span class="badge pk">Pickup only</span>':'';
-    var act=p.soldOut?'<span class="muted" style="font-size:.9rem">Sold out</span>':p.from||p.autoship
+    var badge=p.soldOut?'<span class="sticky">sold out, back soon</span>':p.pickupOnly?'<span class="stamp">MADE<br>HERE</span>':'';
+    var act=p.soldOut?'':p.from||p.autoship
       ?'<button class="qa" type="button" data-open="'+p.id+'" aria-label="Choose '+(p.from?'size':'options')+' for '+esc(p.name)+'">Choose</button>'
-      :'<button class="qa" type="button" data-add="'+p.id+'" aria-label="Add '+esc(p.name)+' to bag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Add</button>';
-    var size=!p.from&&p.sizes[0][0]?' <small>'+esc(p.sizes[0][0])+'</small>':'';
-    return '<li class="card'+(p.soldOut?' out':'')+'"><button class="plinth" type="button" data-open="'+p.id+'" tabindex="-1" aria-hidden="true">'+badge+pic(p,true)+'</button>'+
-      '<div class="info"><span class="brandname">'+esc(p.brand)+'</span><h3><button type="button" data-open="'+p.id+'">'+esc(p.name)+'</button></h3>'+tag+
-      '<div class="buy"><span class="price">'+(p.from?'From ':'')+money(p.low)+size+'</span>'+act+'</div></div></li>';
+      :'<button class="qa" type="button" data-add="'+p.id+'" aria-label="Add '+esc(p.name)+' to bag">'+plus+'Add</button>';
+    var small=p.soldOut?'Sold out':p.from?'from':(p.sizes[0][0]||'each');
+    return '<li class="item'+(p.soldOut?' out':'')+'"><button class="stage" type="button" data-open="'+p.id+'" tabindex="-1" aria-hidden="true">'+badge+pic(p,true)+'</button>'+
+      '<div class="talker"><span class="brandname">'+esc(p.brand)+'</span><h3><button type="button" data-open="'+p.id+'">'+esc(p.name)+'</button></h3>'+tag+
+      '<div class="buy"><span class="hprice num"><small>'+esc(small)+'</small>'+money(p.low)+'</span>'+act+'</div></div></li>';
   };
   var renderShop=function(pushHash){
     shop.dataset.pet=state.pet;
     $('#pet-'+state.pet).checked=true;
-    $('#f-cat').innerHTML='<span aria-hidden="true">Category</span>'+CATS.map(function(c){
+    $('#f-cat').innerHTML='<span aria-hidden="true">Shelf</span>'+CATS.map(function(c){
       var n=count({pet:state.pet,cat:c[0],need:state.need});
       return '<button class="chip" type="button" data-cat="'+c[0]+'" aria-pressed="'+(state.cat===c[0])+'"'+(n||state.cat===c[0]?'':' disabled')+'>'+c[1]+' <i>'+n+'</i></button>';
     }).join('');
@@ -991,28 +1149,38 @@ dialog[open]{animation:pop .28s var(--ease)}
       return '<button class="chip" type="button" data-need="'+n[0]+'" aria-pressed="'+(state.need===n[0])+'"'+(k||state.need===n[0]?'':' disabled')+'>'+label+' <i>'+k+'</i></button>';
     }).join('');
     var list=P.filter(function(p){return match(p,state)}).sort(function(a,b){return (a.soldOut?1:0)-(b.soldOut?1:0)});
-    $('#grid').innerHTML=list.length?list.map(cardHTML).join(''):'<li class="empty-grid">Nothing here yet online. Ask us in store, we likely have it on the shelf.</li>';
-    var pets=state.pet==='dog'?'dogs':'cats';
-    $('#result').textContent=list.length+' product'+(list.length===1?'':'s')+' for '+pets+(state.pet==='cat'?'. Our cat shelf is growing, so ask us if you don’t see your brand.':'');
+    $('#grid').innerHTML=list.length?list.map(itemHTML).join(''):'<li class="empty-grid">Nothing on this shelf online yet. Ask us in store, we likely have it.</li>';
+    $('#result').textContent=list.length+' product'+(list.length===1?'':'s')+' in the '+state.pet+' aisle'+(state.pet==='cat'?'. Our cat shelf is growing, so ask us if you don’t see your brand.':'.');
     $('#clear').hidden=state.cat==='all'&&!state.need;
     if(pushHash&&history.replaceState)history.replaceState(null,'',hashFor());
   };
-  $$('input[name="pet"]').forEach(function(r){r.addEventListener('change',function(){state.pet=r.value;state.need=state.need==='young'||NEEDS.some(function(n){return n[0]===state.need})?state.need:'';renderShop(true)})});
+  var setPet=function(pet){state.pet=pet;renderShop(true)};
+  $$('input[name="pet"]').forEach(function(r){r.addEventListener('change',function(){setPet(r.value)})});
+  $('#hang').addEventListener('click',function(){setPet(state.pet==='dog'?'cat':'dog')});
   $('#f-cat').addEventListener('click',function(e){var b=e.target.closest('[data-cat]');if(!b)return;state.cat=b.dataset.cat;renderShop(true);$('#f-cat [data-cat="'+state.cat+'"]').focus()});
   $('#f-need').addEventListener('click',function(e){var b=e.target.closest('[data-need]');if(!b)return;state.need=state.need===b.dataset.need?'':b.dataset.need;renderShop(true);$('#f-need [data-need="'+b.dataset.need+'"]').focus()});
   $('#clear').addEventListener('click',function(){state.cat='all';state.need='';renderShop(true);$('#f-cat [data-cat="all"]').focus()});
-  var gridClick=function(e){
+  var flash=function(btn,label,html){btn.classList.add('done');btn.textContent=label;setTimeout(function(){btn.classList.remove('done');btn.innerHTML=html},1400)};
+  $('#grid').addEventListener('click',function(e){
     var a=e.target.closest('[data-add]'),o=e.target.closest('[data-open]');
-    if(a){var p=byId[a.dataset.add];add(p.id,p.sizes[0][0],0,1);a.classList.add('done');a.innerHTML='Added';setTimeout(function(){a.classList.remove('done');a.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Add'},1400)}
+    if(a){var p=byId[a.dataset.add];add(p.id,p.sizes[0][0],0,1);flash(a,'Added',plus+'Add')}
     else if(o)openProduct(o.dataset.open);
-  };
-  $('#grid').addEventListener('click',gridClick);
-  $('#bake-grid').addEventListener('click',gridClick);
-  $('#bake-grid').innerHTML=P.filter(function(p){return p.cat==='bakery'}).map(cardHTML).join('');
-  $$('a[href="#dog"],a[href="#cat"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();state.pet=a.getAttribute('href').slice(1);state.cat='all';state.need='';renderShop(true);shop.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});setTimeout(function(){$('#pet-'+state.pet).focus({preventScroll:true})},400)})});
-  window.addEventListener('hashchange',function(){if(readHash()){renderShop(false);shop.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}});
+  });
+  $$('a[href="#dog"],a[href="#cat"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();state.pet=a.getAttribute('href').slice(1);state.cat='all';state.need='';renderShop(true);shop.scrollIntoView({behavior:reduced?'auto':'smooth'});setTimeout(function(){$('#pet-'+state.pet).focus({preventScroll:true})},450)})});
+  window.addEventListener('hashchange',function(){if(readHash()){renderShop(false);shop.scrollIntoView({behavior:reduced?'auto':'smooth'})}});
   var fromHash=readHash();renderShop(false);
   if(fromHash){if('scrollRestoration' in history)history.scrollRestoration='manual';var jump=function(){shop.scrollIntoView({behavior:'instant'})};if(document.readyState==='complete')jump();else window.addEventListener('load',jump)}
+
+  /* ---------- bakery chalkboard ---------- */
+  $('#menu').innerHTML=P.filter(function(p){return p.cat==='bakery'}).map(function(p){
+    var btn=p.from?'<button class="chalk-btn" type="button" data-open="'+p.id+'">Choose</button>':'<button class="chalk-btn" type="button" data-add="'+p.id+'" aria-label="Add '+esc(p.name)+' to bag">Add</button>';
+    return '<li><span class="n">'+esc(p.name)+'</span><span class="lead" aria-hidden="true"></span><span class="p num">'+(p.from?'from ':'')+money(p.low)+'</span>'+btn+'<span class="d">'+esc(p.desc)+(p.sizes[0][0]&&!p.from?' '+esc(p.sizes[0][0])+'.':'')+'</span></li>';
+  }).join('');
+  $('#menu').addEventListener('click',function(e){
+    var a=e.target.closest('[data-add]'),o=e.target.closest('[data-open]');
+    if(a){var p=byId[a.dataset.add];add(p.id,p.sizes[0][0],0,1);flash(a,'Added','Add')}
+    else if(o)openProduct(o.dataset.open);
+  });
 
   /* ---------- product panel ---------- */
   var pd=$('#product'),cur={id:null,size:'',freq:0,qty:1};
@@ -1032,10 +1200,10 @@ dialog[open]{animation:pop .28s var(--ease)}
     var p=byId[id];opts=opts||{};
     cur={id:id,size:opts.size||p.sizes[0][0],freq:opts.freq||0,qty:1};
     $('#pd-qty').textContent='1';
-    $('#pd-pic').innerHTML=p.ph?phHTML(p,true):'<img src="images/products/'+p.id+'.webp" alt="'+esc(p.brand+' '+p.name+' package')+'" width="'+p.img[0]+'" height="'+p.img[1]+'">';
+    $('#pd-pic').innerHTML=pic(p,false,true,true);
     $('#pd-brand').textContent=p.brand;$('#pd-name').textContent=p.name;$('#pd-desc').textContent=p.desc;
     $('#pd-tags').innerHTML=p.tags.map(function(t){return '<li>'+esc(tagLabel(p,t))+'</li>'}).join('');
-    var sw=$('#pd-size-wrap');sw.hidden=!p.from&&!p.sizes[0][0];
+    $('#pd-size-wrap').hidden=!p.from&&!p.sizes[0][0];
     $('#pd-sizes').innerHTML=p.sizes.map(function(s,i){return '<input type="radio" name="size" id="sz-'+i+'" value="'+esc(s[0])+'"'+(s[0]===cur.size?' checked':'')+'><label for="sz-'+i+'">'+esc(s[0])+(p.from?' <span class="num" style="font-weight:500;margin-left:.35rem">'+money(s[1])+'</span>':'')+'</label>'}).join('');
     $('#pd-freq-wrap').hidden=!p.autoship||!!p.soldOut;
     $('#pd-note').textContent=p.soldOut?'Sold out online right now. Call 905-335-7036 and we’ll check the shelf.':p.pickupOnly?'Made in-store. Pickup or curbside only, not delivered.':p.autoship?'Auto-ship is 5% off, and you can skip or change it anytime.':'';
@@ -1048,13 +1216,26 @@ dialog[open]{animation:pop .28s var(--ease)}
   $('#pd-plus').addEventListener('click',function(){cur.qty=Math.min(20,cur.qty+1);$('#pd-qty').textContent=cur.qty;renderPrice()});
   $('#pd-add').addEventListener('click',function(){add(cur.id,cur.size,cur.freq,cur.qty,true);pd.close();openBag()});
 
-  /* ---------- auto-ship example ---------- */
+  /* ---------- auto-ship: the wall calendar ---------- */
   var fmtDate=function(d){return d.toLocaleDateString('en-CA',{weekday:'short',month:'long',day:'numeric'})};
-  var plus=function(w){var d=new Date();d.setDate(d.getDate()+w*7);return d};
+  var plusWeeks=function(w){var d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()+w*7);return d};
   (function(){
     var b=byId['orijen-original'].sizes[1][1];
-    $('#plan-price').innerHTML=money(r2(b*(1-AUTO_OFF)))+' every 4 weeks<s>'+money(b)+'</s>';
-    $('#plan-dates').innerHTML=[0,4,8].map(function(w,i){return '<li><span>'+(i?'Next order':'First order')+'</span><span>'+(i?fmtDate(plus(w)):'Today')+'</span></li>'}).join('');
+    $('#plan-price').innerHTML=money(r2(b*(1-AUTO_OFF)))+' every 4 weeks <s>'+money(b)+'</s>';
+    var hits=[0,4,8].map(plusWeeks),today=plusWeeks(0);
+    $('#plan-dates').innerHTML=hits.map(function(d,i){return '<li>'+(i?fmtDate(d):'Today')+'</li>'}).join('');
+    var html='';
+    for(var m=0;m<3;m++){
+      var first=new Date(today.getFullYear(),today.getMonth()+m,1),days=new Date(first.getFullYear(),first.getMonth()+1,0).getDate();
+      var cells='SMTWTFS'.split('').map(function(c){return '<i>'+c+'</i>'}).join('');
+      for(var k=0;k<first.getDay();k++)cells+='<span></span>';
+      for(var d=1;d<=days;d++){
+        var cd=new Date(first.getFullYear(),first.getMonth(),d),hit=hits.some(function(h){return +h===+cd});
+        cells+='<span class="'+(hit?'hit':cd<today?'past':'')+'"'+(hit?' style="--rot:'+(((d*37)%30)-15)+'deg"':'')+'>'+d+'</span>';
+      }
+      html+='<div class="month"><h4>'+first.toLocaleDateString('en-CA',{month:'long'})+'</h4><div class="days">'+cells+'</div></div>';
+    }
+    $('#months').innerHTML=html;
     $('#plan-try').addEventListener('click',function(){openProduct('orijen-original',{size:'6 kg',freq:4})});
   })();
 
@@ -1062,6 +1243,7 @@ dialog[open]{animation:pop .28s var(--ease)}
   var bagD=$('#bag');
   var openBag=function(){$('#toast').classList.remove('show');renderBag();openDlg(bagD)};
   $('#bag-open').addEventListener('click',openBag);
+  var thumb=function(p,qty){return '<div class="thumb">'+pic(p)+(qty?'<b>'+qty+'</b>':'')+'</div>'};
   var renderBag=function(){
     var t=totals();
     $('#bag-count').textContent=t.count;
@@ -1072,7 +1254,7 @@ dialog[open]{animation:pop .28s var(--ease)}
     $('#meter').innerHTML=(left>0?'<b class="num">'+money(left)+'</b> more for free local delivery.':'<b>Free local delivery</b> in Burlington and Oakville.')+'<div class="track"><i style="width:'+Math.min(100,t.total/FREE_DEL*100)+'%"></i></div>';
     $('#lines').innerHTML=bag.map(function(l,i){
       var p=byId[l.id];var meta=[l.size,p.pickupOnly?'Pickup only':''].filter(Boolean).join(', ');
-      return '<li class="bline"><div class="im">'+pic(p)+'</div><div><h3>'+esc(p.brand==='OUR BAKERY'?p.name:p.brand+' '+p.name)+'</h3><span class="meta">'+esc(meta)+(l.freq?'<br><span class="auto-tag">Auto-ship every '+l.freq+' weeks, 5% off</span>':'')+'</span></div>'+
+      return '<li class="bline">'+thumb(p)+'<div><h3>'+esc(fullName(p))+'</h3><span class="meta">'+esc(meta)+(l.freq?'<br><span class="auto-tag">Auto-ship every '+l.freq+' weeks, 5% off</span>':'')+'</span></div>'+
         '<span class="price">'+money(r2(unit(l)*l.qty))+'</span>'+
         '<div class="ctl"><div class="qty sm" role="group" aria-label="Quantity of '+esc(p.name)+'"><button type="button" data-dec="'+i+'" aria-label="Decrease quantity of '+esc(p.name)+'">&minus;</button><output>'+l.qty+'</output><button type="button" data-inc="'+i+'" aria-label="Increase quantity of '+esc(p.name)+'">+</button></div><button class="rm" type="button" data-rm="'+i+'">Remove</button></div></li>';
     }).join('');
@@ -1105,13 +1287,14 @@ dialog[open]{animation:pop .28s var(--ease)}
     if(!v)return {ok:false,msg:'Enter your postal code.'};
     if(!/^[A-Z]\d[A-Z]\d[A-Z]\d$/.test(v))return {ok:false,msg:'Enter a postal code like L7L 0A2.'};
     if(DEL_FSA.indexOf(v.slice(0,3))<0)return {ok:false,msg:'We only deliver in Burlington and Oakville, and '+v.slice(0,3)+' is outside that area. Choose pickup or curbside instead.'};
-    return {ok:true,fsa:v.slice(0,3)};
+    return {ok:true};
   };
+  var ferr=function(id,msg){var el=$('#'+id),e=$('#'+id+'-err');e.textContent=msg||'';el.setAttribute('aria-invalid',msg?'true':'false');return !msg};
   $('#co-postal').addEventListener('input',function(){
     var v=normPostal(this.value),h=$('#co-postal-hint');
     if(v.length>=3){var ok=DEL_FSA.indexOf(v.slice(0,3))>-1;h.textContent=ok?'Good news, we deliver to '+v.slice(0,3)+'.':v.slice(0,3)+' is outside our delivery area.';h.classList.toggle('good',ok)}
     else{h.textContent='We deliver in Burlington and Oakville.';h.classList.remove('good')}
-    if($('#co-postal').getAttribute('aria-invalid')==='true')ferr('co-postal','');
+    if(this.getAttribute('aria-invalid')==='true')ferr('co-postal','');
   });
   var calc=function(){
     var t=totals(),m=method();
@@ -1119,7 +1302,6 @@ dialog[open]{animation:pop .28s var(--ease)}
     var tax=r2((t.total+fee)*HST);
     return {t:t,fee:fee,tax:tax,total:r2(t.total+fee+tax)};
   };
-  var pickupOnly=function(){return bag.filter(function(l){return byId[l.id].pickupOnly})};
   var renderCheckout=function(){
     var c=calc(),m=method();
     $('#m-del').textContent=c.t.total>=FREE_DEL?'Free':money(DEL_FEE);
@@ -1127,14 +1309,14 @@ dialog[open]{animation:pop .28s var(--ease)}
     $('#car-wrap').hidden=m!=='curbside';
     $('#co-phone-opt').hidden=m!=='pickup';
     $('#co-lines').innerHTML=bag.map(function(l){var p=byId[l.id];
-      return '<li><div class="im">'+pic(p)+'<b>'+l.qty+'</b></div><span>'+esc(p.name)+'<span class="meta">'+esc([l.size,l.freq?'Every '+l.freq+' weeks':''].filter(Boolean).join(', '))+'</span></span><span class="num">'+money(r2(unit(l)*l.qty))+'</span></li>'}).join('');
+      return '<li>'+thumb(p,l.qty)+'<span>'+esc(p.name)+'<span class="meta">'+esc([l.size,l.freq?'Every '+l.freq+' weeks':''].filter(Boolean).join(', '))+'</span></span><span class="num">'+money(r2(unit(l)*l.qty))+'</span></li>'}).join('');
     $('#co-sub').textContent=money(c.t.sub);
     $('#co-save-row').hidden=!c.t.saved;$('#co-save').textContent='−'+money(c.t.saved);
     $('#co-ship-l').textContent=m==='delivery'?'Delivery':m==='curbside'?'Curbside pickup':'Pickup';
     $('#co-ship').textContent=c.fee?money(c.fee):'Free';
     $('#co-tax').textContent=money(c.tax);$('#co-total').textContent=money(c.total);
     $('#co-place').textContent='Place order, '+money(c.total);
-    var po=pickupOnly();
+    var po=bag.filter(function(l){return byId[l.id].pickupOnly});
     $('#co-err').textContent=m==='delivery'&&po.length?po.map(function(l){return byId[l.id].name}).join(' and ')+(po.length>1?' are':' is')+' made in-store and pickup only. Choose pickup or curbside, or remove '+(po.length>1?'them':'it')+' from your bag.':'';
     return c;
   };
@@ -1143,7 +1325,6 @@ dialog[open]{animation:pop .28s var(--ease)}
     bagD.close();$('#co').hidden=false;$('#co-done').hidden=true;renderCheckout();openDlg(co);co.scrollTop=0;
     setTimeout(function(){$('input[name="method"]:checked').focus()},30);
   });
-  var ferr=function(id,msg){var el=$('#'+id),e=$('#'+id+'-err');e.textContent=msg||'';el.setAttribute('aria-invalid',msg?'true':'false');return !msg};
   $('#co-form').addEventListener('submit',function(e){
     e.preventDefault();
     var c=renderCheckout(),m=method();
@@ -1167,12 +1348,12 @@ dialog[open]{animation:pop .28s var(--ease)}
        'We’ll email you a delivery window for '+normPostal($('#co-postal').value).replace(/^(.{3})/,'$1 ')+'.');
     var autos=bag.filter(function(l){return l.freq});
     $('#co-done-auto').innerHTML=autos.length?'<b>Your auto-ship is set</b><ul>'+autos.map(function(l){var p=byId[l.id];
-      return '<li>'+esc(p.brand+' '+p.name)+', '+esc(l.size)+': every '+l.freq+' weeks, next on '+esc(fmtDate(plus(l.freq)))+'</li>'}).join('')+'</ul><p style="margin-top:.4rem;font-size:.9rem;color:var(--ink-2)">We’ll email a reminder a few days before each one, so you can skip or change it.</p>':'';
+      return '<li>'+esc(fullName(p))+', '+esc(l.size)+': every '+l.freq+' weeks, next on '+esc(fmtDate(plusWeeks(l.freq)))+'</li>'}).join('')+'</ul><p style="margin-top:.4rem;font-size:.9rem;color:var(--ink-2)">We’ll email a reminder a few days before each one, so you can skip or change it.</p>':'';
     bag=[];save();renderBag();
     $('#co').hidden=true;var d=$('#co-done');d.hidden=false;co.scrollTop=0;d.focus();
   });
 
-  /* ---------- food finder ---------- */
+  /* ---------- food finder: at the counter ---------- */
   var QS=[
     {k:'pet',q:'Who are we feeding?',o:[['dog','A dog'],['cat','A cat']]},
     {k:'age',q:function(a){return a.pet==='cat'?'How old is your cat?':'How old is your dog?'},o:function(a){return [['young',a.pet==='cat'?'Kitten':'Puppy',a.pet==='cat'?'Under a year':'Still growing'],['adult','Adult',a.pet==='cat'?'1 to 10 years':'All grown up'],['senior','Senior',a.pet==='cat'?'11 and up':'Slowing down a little']]}},
@@ -1221,6 +1402,7 @@ dialog[open]{animation:pop .28s var(--ease)}
     young:'For a young pet with a concern, we’d still start with a puppy or kitten formula and change foods slowly. Tell us more at the counter.',
     catSens:'We don’t list a limited-ingredient cat food online yet. Bring in the bag your cat eats now and we’ll find one on the shelf.'
   };
+  var LABEL={young:{dog:'puppy',cat:'kitten'},adult:'adult',senior:'senior',none:'no concerns',sensitive:'sensitive stomach',weight:'weight',allergies:'allergies',picky:'picky eater'};
   var ans={},step=0;
   var val=function(x){return typeof x==='function'?x(ans):x};
   var renderQ=function(){
@@ -1228,26 +1410,30 @@ dialog[open]{animation:pop .28s var(--ease)}
     if(step<3){
       var q=QS[step];$('#q-step').textContent='Question '+(step+1)+' of 3';
       $('#q-body').innerHTML='<h3 tabindex="-1">'+esc(val(q.q))+'</h3><div class="opts">'+val(q.o).map(function(o){return '<button class="opt" type="button" data-v="'+o[0]+'">'+esc(o[1])+(o[2]?'<span>'+esc(o[2])+'</span>':'')+'</button>'}).join('')+'</div>'+
-        (step?'<div class="q-foot" style="margin-top:1rem"><button class="tlink" type="button" data-back>Back</button></div>':'');
+        (step?'<div class="q-foot"><button class="tlink" type="button" data-back>Back</button></div>':'');
       return;
     }
     var key=ans.age==='young'?ans.pet+'|young':ans.pet+'|'+ans.age+'|'+ans.need;
     var ids=(RULES[key]||(ans.pet==='cat'?[]:RULES[ans.pet+'|'+ans.age+'|none']||[])).filter(function(id){return !byId[id].soldOut});
     var note=ans.age==='young'&&ans.need!=='none'?NOTE.young:ans.pet==='cat'&&(ans.need==='sensitive'||ans.need==='allergies')?NOTE.catSens:'';
-    $('#q-step').textContent='Our suggestions';
-    $('#q-body').innerHTML='<h3 tabindex="-1">'+(ids.length?'Start with '+(ids.length===1?'this':'these'):'Let’s talk in person')+'</h3>'+
-      (ids.length?'<ul class="picks">'+ids.map(function(id){var p=byId[id];
-        return '<li class="pick"><div class="im">'+pic(p,true)+'</div><div><b>'+esc(p.brand+' '+p.name)+'</b><small>'+esc(WHY[id]||p.desc)+'</small></div><button class="btn" type="button" data-open="'+id+'">From '+money(p.low)+'</button></li>'}).join('')+'</ul>':'')+
-      (note?'<p class="talk">'+esc(note)+'</p>':'')+
-      '<p class="talk">Not sure? Bring the bag you’re using now and we’ll compare labels at the counter.</p>'+
+    var stage=ans.age==='young'?LABEL.young[ans.pet]:LABEL[ans.age];
+    var now=new Date();
+    $('#q-step').textContent='Here’s your list';
+    $('#q-body').innerHTML='<div class="receipt" role="group" aria-labelledby="rc-h"><h3 id="rc-h" tabindex="-1">OTIS &amp; ALLEN</h3><p class="c">2500 APPLEBY LINE, BURLINGTON<br>'+esc(now.toLocaleDateString('en-CA',{year:'numeric',month:'short',day:'numeric'}))+'</p><hr>'+
+      '<p>FOR: '+esc((ans.pet+', '+stage+', '+LABEL[ans.need]).toUpperCase())+'</p><hr>'+
+      (ids.length?'<ol>'+ids.map(function(id,i){var p=byId[id];
+        return '<li><div class="im">'+pic(p,true)+'</div><div><div class="row"><b>'+(i+1)+'. '+esc(fullName(p).toUpperCase())+'</b></div><span class="why">'+esc(WHY[id]||p.desc)+'</span><div class="row"><span>FROM '+money(p.low)+'</span><button class="rbtn" type="button" data-open="'+id+'">VIEW</button></div></div></li>'}).join('')+'</ol><hr>':'<p>NO MATCH ONLINE YET. LET’S TALK IN PERSON.</p><hr>')+
+      (note?'<p class="note">'+esc(note)+'</p><hr>':'')+
+      '<p class="note">Not sure? Bring the bag you’re using now and we’ll compare labels at the counter.</p><hr><p class="c"><b>THANK YOU, COME SAY HI</b><br>905-335-7036</p></div>'+
       '<div class="q-foot"><button class="tlink" type="button" data-restart>Start over</button></div>';
   };
   $('#quiz').addEventListener('click',function(e){
     var o=e.target.closest('.opt'),d=e.target.closest('[data-open]');
-    if(o){ans[QS[step].k]=o.dataset.v;step++;renderQ();$('#q-body h3').focus({preventScroll:true})}
+    var focusH=function(){var h=$('#q-body h3');if(h)h.focus({preventScroll:true})};
+    if(o){ans[QS[step].k]=o.dataset.v;step++;renderQ();focusH()}
     else if(d)openProduct(d.dataset.open);
-    else if(e.target.closest('[data-back]')){step--;renderQ();$('#q-body h3').focus({preventScroll:true})}
-    else if(e.target.closest('[data-restart]')){ans={};step=0;renderQ();$('#q-body h3').focus({preventScroll:true})}
+    else if(e.target.closest('[data-back]')){step--;renderQ();focusH()}
+    else if(e.target.closest('[data-restart]')){ans={};step=0;renderQ();focusH()}
   });
   renderQ();
 
